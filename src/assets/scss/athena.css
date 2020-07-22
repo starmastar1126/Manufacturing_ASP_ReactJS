@@ -1,0 +1,71 @@
+
+.left-sidebar {
+    width: 280px;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid rgb(204, 202, 202);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.left-sidebar:hover{
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.left-panel {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    border: 1px solid rgb(204, 202, 202);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.category{
+    width: 280px;
+    height: 50px;
+    background: #CD2323;
+    color: aliceblue;
+    border-bottom: 1px solid rgb(204, 202, 202);
+    padding-left: 20px;
+    padding-top: 13px;
+    font-size: 15px;
+}
+.element{
+    width: 280px;
+    height: 50px;
+    border-right: 1px solid rgb(204, 202, 202);
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 13px;
+}
+.element:hover {
+    width: 280px;
+    height: 50px;
+    background: rgb(119, 116, 116);
+    color: aliceblue;
+    border-top: 1px solid rgb(204, 202, 202);
+    border-right: 0px solid rgb(204, 202, 202);
+    border-left: 0px solid rgb(204, 202, 202);
+    border-bottom: 1px solid rgb(204, 202, 202);
+}
+.element_active {
+    width: 280px;
+    height: 50px;
+    background: rgb(119, 116, 116);
+    color: aliceblue;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+.second{
+    width: 280px;
+    height: 50px;
+    background: #CD2323;
+    color: aliceblue;
+    border-bottom: 1px solid rgb(204, 202, 202);
+    padding-left: 20px;
+    padding-top: 13px;
+    font-size: 15px;
+}

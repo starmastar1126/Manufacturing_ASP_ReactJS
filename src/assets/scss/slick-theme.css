@@ -1,0 +1,211 @@
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block ;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.magazin_list_page .slick-prev, .magazin_list_page .slick-next{
+	background:none;
+}
+.slick-prev{
+    left:0px;
+    background:url(../img/pre_arrow.png) 0 0 no-repeat;
+    width:36px;
+    height:66px;
+    top:50%;
+    z-index: 9;
+    margin-top:0px;
+}
+
+.slick-prev:hover, .slick-prev:focus{
+	background:url(../img/pre_arrow_h.png) 0 0 no-repeat;
+}
+.magazin_list_page .search_box:hover .slick-prev{
+    background:url(../img/pre_arrow_h.png) 0 0 no-repeat;
+}
+
+.slick-next
+{
+    right:0px;
+	background:url(../img/next_arrow.png) 0 0 no-repeat;
+	width:36px;
+	height:66px;
+	top:50%;
+    z-index: 9;
+    margin-top: 0x;
+}
+.magazin_list_page .search_box:hover .slick-next{
+	background:url(../img/next_arrow_h.png) 0 0 no-repeat;
+}
+.slick-next:hover, .slick-next:focus{
+    background:url(../img/next_arrow_h.png) 0 0 no-repeat;
+}
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: 0px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width:20px;
+    height:4px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width:50px;
+    height:4px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width:20px;
+    height:3px;
+
+    content: '';
+    text-align: center;
+
+    opacity:0.4;
+    color: black;
+	background:#CD2323;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+	opacity:1;
+}
+
+.product_col .slick-prev{
+    left:-13px;
+	background:url(../img/product_pre_h.png) 0 0 no-repeat;
+	width:36px;
+	height:50px;
+	top:50%;
+    z-index: 9;
+    margin-top:0px;
+}
+.product_col .slick-prev:hover, .product_col .slick-prev:focus{
+	background:url(../img/product_pre.png) 0 0 no-repeat;
+}
+.product_col .slick-next
+{
+    right:0px;
+	background:url(../img/product_next_h.png) 0 0 no-repeat;
+	width:36px;
+	height:50px;
+	top:50%;
+    z-index: 9;
+    margin-top:0px;
+}
+.product_col .slick-next:hover, .product_col .slick-next:focus{
+	background:url(../img/product_next.png) 0 0 no-repeat;
+}
+.viewspecial_magazin .slick-initialized .slick-slide {
+    display: block;
+    margin: 0;
+}
+.cart_item_image .slick-prev {
+    background: url(../img/product_pre.png) 0 0 no-repeat;
+    height: 50px;
+}
+.cart_item_image .slick-next {
+    background: url(../img/product_next.png) 0 0 no-repeat;
+    height: 50px;
+    right: 8px;
+}
+.cart_item_image .slick-prev:hover, .cart_item_image .slick-prev:focus {
+    background: url(../img/product_pre_h.png) 0 0 no-repeat;
+}
+.cart_item_image .slick-next:hover, .cart_item_image .slick-next:focus {
+    background: url(../img/product_next_h.png) 0 0 no-repeat;
+}
+
+@media screen and (min-width :300px) and (max-width:899px){
+.slick-next {
+    right: -10px;}
+    .slick-prev {
+        left: -10px;}
+    }
+
+@media screen and (min-width :300px) and (max-width:399px){
+.slick-prev {
+        left: 0;}
+.slick-next {right: 0;}
+}
