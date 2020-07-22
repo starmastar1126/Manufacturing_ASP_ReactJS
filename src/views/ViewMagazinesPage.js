@@ -244,35 +244,35 @@ class ViewMagazinesPage extends React.Component {
           bgImage = {bgImage}
           title = {'View Magazines'}
         />
-        <section class="viewspecial magazin_list_page">
-          <div class="container">
-            <div class="topview topview_add clearfix">
+        <section className="viewspecial magazin_list_page">
+          <div className="container">
+            <div className="topview topview_add clearfix">
               <h1>Search Filters</h1>
               <ul>
                 {selectData.map((selectItem, selectKey) => {
                   return (
                     <li>
-                      <div class={"sel_col"}>
+                      <div className={"sel_col"}>
                         <Select
                           index = {selectItem.index}
                           classes = "selectpicker"
                           options = {selectItem.options}
                         />
-                        <i class="dropp_arrow"></i>
+                        <i className="dropp_arrow"></i>
                       </div>
                     </li>
                   );}                      
                 )}      
                 <li>
-                  <input class="input_search" type="submit" name="" id="" value="search"/>
+                  <input className="input_search" type="submit" name="" id="" value="search"/>
                 </li>                
               </ul>
             </div>
                                
-            <div class="search_list viewspecial_magazin">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="row">
+            <div className="search_list viewspecial_magazin">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="row">
                     {magazinesCardData.map((magazinesCardItem, magazinesCardKey) => {
                       return (
                         <MagazinesCard

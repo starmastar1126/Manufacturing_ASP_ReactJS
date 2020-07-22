@@ -274,7 +274,7 @@
     $('.custom-options').selectric({
       optionsItemBuilder: function(itemData) {
         return itemData.value.length ?
-          '<span class="ico ico-' + itemData.value +  '"></span>' + itemData.text :
+          '<span className="ico ico-' + itemData.value +  '"></span>' + itemData.text :
           itemData.text;
       }
     });

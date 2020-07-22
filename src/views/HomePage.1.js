@@ -364,7 +364,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <div>
-        <Slider class={horizontalCss} autoplay={1}>            
+        <Slider className={horizontalCss} autoplay={1}>
           {sliderData.map((sliderItem, sliderKey) => {
             return (
               <div
@@ -380,16 +380,16 @@ class HomePage extends React.Component {
               );}                      
             )}       
         </Slider>
-        <section class="howitsworks">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 text-center">
+        <section className="howitsworks">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-4 text-center">
                 <img src={image01} alt="" />
               </div>
-              <div class="col-md-8 padding_big">
+              <div className="col-md-8 padding_big">
                 <h1>How it works?</h1>
                 <h2>LEADS GENERATOR AND BUSINESS MATCH MAKING ANALYTICAL SYSTEM</h2>                
-                <div class="row">  
+                <div className="row">
                   {howitsworksData.map((howitsworksItem, howitsworksKey) => {
                     return (
                       <HowItsWorks
@@ -406,35 +406,35 @@ class HomePage extends React.Component {
           </div>
         </section>
 
-        <section class="section_bg">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 text-center">
+        <section className="section_bg">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6 text-center">
                 <h1>Business Match Making & Leads Generation System</h1><br/>
                 {/* <p>Manufacturing, Industrial, Metal <br/> Chemical, Electronic, Textiles, Mining etc...</p> */}
                 {/* <img src="assets/img/video.png" alt=""/> */}
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/-ItnEvQLJho" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
               </div>
-              <div class="col-md-6 text-center">
-                <div class="bg_form clearfix">
+              <div className="col-md-6 text-center">
+                <div className="bg_form clearfix">
                   <h1>Request any industrial item here, for FREE!!</h1>
-                  <div id="dvRequestDetails" class="show">
+                  <div id="dvRequestDetails" className="show">
                     <input name="ctl00$cphBody$txtTitle" type="text" id="txtTitle" tabindex="150" placeholder="Item Required *" />
-                    <span id="rfvtxtTitle" class="hide">
-                      <span class="help-block has-error">Please Enter What You Require.</span>
+                    <span id="rfvtxtTitle" className="hide">
+                      <span className="help-block has-error">Please Enter What You Require.</span>
                     </span>
                     <input name="ctl00$cphBody$txtDescription" type="text" id="txtDescription" tabindex="151" placeholder="Enter Description *" />
-                    <span id="rfvtxtDescription" class="hide">
-                      <span class="help-block has-error">Please Enter Description.</span>
+                    <span id="rfvtxtDescription" className="hide">
+                      <span className="help-block has-error">Please Enter Description.</span>
                     </span>
-                    <input type="button" id="cmdRDNext" class="request" value="Next" tabindex="152" onClick={this.cmdRDNext}/>
+                    <input type="button" id="cmdRDNext" className="request" value="Next" tabindex="152" onClick={this.cmdRDNext}/>
                   </div>
 
-                  <div id="dvCategoryDetails" class="hide">
-                    <h4 class="tag">Category Information</h4>
-                    <hr class="sec-divider"/>
-                    <div class="form-group">
-                      <label class="control-label compulsory">Category*</label>
+                  <div id="dvCategoryDetails" className="hide">
+                    <h4 className="tag">Category Information</h4>
+                    <hr className="sec-divider"/>
+                    <div className="form-group">
+                      <label className="control-label compulsory">Category*</label>
                       {selectData.map((selectItem, selectKey) => {
                         if(selectItem.tabIndex === '153'){
                           return (
@@ -448,23 +448,23 @@ class HomePage extends React.Component {
                           )}
                         ;}                      
                       )}      
-                      <span id="rfvcboRequestCategory" class="hide">
-                        <span class="help-block has-error">Please Select Category.</span>
+                      <span id="rfvcboRequestCategory" className="hide">
+                        <span className="help-block has-error">Please Select Category.</span>
                       </span>
                     </div>
-                    <div class="form-group clearfix">
-                      <div class="pull-right">
-                        <input type="button" id="cmdCAPrev" class="request" value="Previous" tabindex="154" onClick={this.cmdCAPrev}/>
-                        <input type="button" id="cmdCANext" class="request marginleft10" value="Next" tabindex="155" onClick={this.cmdCANext}/>
+                    <div className="form-group clearfix">
+                      <div className="pull-right">
+                        <input type="button" id="cmdCAPrev" className="request" value="Previous" tabindex="154" onClick={this.cmdCAPrev}/>
+                        <input type="button" id="cmdCANext" className="request marginleft10" value="Next" tabindex="155" onClick={this.cmdCANext}/>
                       </div>
                     </div>
                   </div>
 
-                  <div id="dvAreaDetails" class="hide">
-                    <h4 class="tag">Area Information</h4>
-                    <hr class="sec-divider"/>
-                    <div class="form-group">
-                      <label class="control-label compulsory">Province</label>
+                  <div id="dvAreaDetails" className="hide">
+                    <h4 className="tag">Area Information</h4>
+                    <hr className="sec-divider"/>
+                    <div className="form-group">
+                      <label className="control-label compulsory">Province</label>
                       {selectData.map((selectItem, selectKey) => {
                         if(selectItem.tabIndex === '156'){
                           return (
@@ -478,12 +478,12 @@ class HomePage extends React.Component {
                           )}
                         ;}                      
                       )}    
-                      <span id="rfvcboRequestProvince" class="hide">
-                        <span class="help-block has-error">Please Select Province.</span>
+                      <span id="rfvcboRequestProvince" className="hide">
+                        <span className="help-block has-error">Please Select Province.</span>
                       </span>
                     </div>
-                    <div class="form-group">
-                      <label class="control-label compulsory">City</label>
+                    <div className="form-group">
+                      <label className="control-label compulsory">City</label>
                       <div id="dvcboRequestCity">
                         {selectData.map((selectItem, selectKey) => {
                           if(selectItem.tabIndex === '157'){
@@ -499,12 +499,12 @@ class HomePage extends React.Component {
                           ;}                      
                         )}    
                       </div>
-                      <span id="rfvcboRequestCity" class="hide">
-                        <span class="help-block has-error">Please Select City.</span>
+                      <span id="rfvcboRequestCity" className="hide">
+                        <span className="help-block has-error">Please Select City.</span>
                       </span>
                     </div>
-                    <div class="form-group">
-                      <label class="control-label compulsory">Suburb</label>
+                    <div className="form-group">
+                      <label className="control-label compulsory">Suburb</label>
                       <div id="dvcboRequestSuburb">
                         {selectData.map((selectItem, selectKey) => {
                           if(selectItem.tabIndex === '158'){
@@ -520,103 +520,103 @@ class HomePage extends React.Component {
                           ;}                      
                         )}    
                       </div>
-                      <span id="rfvcboRequestSuburb" class="hide">
-                        <span class="help-block has-error">Please Select Suburb.</span>
+                      <span id="rfvcboRequestSuburb" className="hide">
+                        <span className="help-block has-error">Please Select Suburb.</span>
                       </span>
                     </div>
-                    <div class="form-group clearfix">
-                      <div class="pull-right">
-                        <input type="button" id="cmdADPrev" class="request" value="Previous" tabindex="159" onClick={this.cmdADPrev}/>
-                        <input type="button" id="cmdADNext" class="request marginleft10" value="Next" tabindex="160" onClick={this.cmdADNext}/>
+                    <div className="form-group clearfix">
+                      <div className="pull-right">
+                        <input type="button" id="cmdADPrev" className="request" value="Previous" tabindex="159" onClick={this.cmdADPrev}/>
+                        <input type="button" id="cmdADNext" className="request marginleft10" value="Next" tabindex="160" onClick={this.cmdADNext}/>
                       </div>
                     </div>
                   </div>
 
-                  <div id="dvImageDetails" class="hide">
-                    <h4 class="tag">Upload Photo</h4>
-                    <hr class="sec-divider"/>
-                    <div class="form-group">
+                  <div id="dvImageDetails" className="hide">
+                    <h4 className="tag">Upload Photo</h4>
+                    <hr className="sec-divider"/>
+                    <div className="form-group">
                       <iframe id="ifmUploadFile" name="ifmUploadFile" width="100%" marginheight="0" marginwidth="0" title="Upload File" height="130" scrolling="no" frameborder="0" style={{margin: '0px', padding: '0px'}}></iframe>
                     </div>
-                    <div id="dvlUploadImages" class="clearfix marginbott10"></div>
-                    <div class="clearfix">
-                      <div class="pull-right">
-                        <input type="button" id="cmdUIPrev" class="request" value="Previous" tabindex="161" onClick={this.cmdUIPrev} />
-                        <input type="button" id="cmdUINext" class="request marginleft10" value="Next" tabindex="162" onClick={this.cmdUINext}/>
+                    <div id="dvlUploadImages" className="clearfix marginbott10"></div>
+                    <div className="clearfix">
+                      <div className="pull-right">
+                        <input type="button" id="cmdUIPrev" className="request" value="Previous" tabindex="161" onClick={this.cmdUIPrev} />
+                        <input type="button" id="cmdUINext" className="request marginleft10" value="Next" tabindex="162" onClick={this.cmdUINext}/>
                       </div>
                     </div>
                   </div>
 
-                  <div id="dvRegisterDetails" class="hide">
-                    <h4 class="tag">Register</h4>
-                    <hr class="sec-divider"/>
-                    <div class="form-group">
+                  <div id="dvRegisterDetails" className="hide">
+                    <h4 className="tag">Register</h4>
+                    <hr className="sec-divider"/>
+                    <div className="form-group">
                       <input type="hidden" name="ctl00$cphBody$hdnREmailExists" id="hdnREmailExists" value="0"/>
-                      <label class="control-label compulsory">Email</label>
+                      <label className="control-label compulsory">Email</label>
                       <input name="ctl00$cphBody$txtREmail" type="text" id="txtREmail" tabindex="163" placeholder="Enter Email"/>
-                      <span id="rfvtxtREmail" class="hide">
-                        <span class="help-block has-error">Please enter email address.</span>
+                      <span id="rfvtxtREmail" className="hide">
+                        <span className="help-block has-error">Please enter email address.</span>
                       </span>
-                      <span id="cvtxtREmail" class="hide">
-                        <span class="help-block has-error">Please enter valid email address.</span>
+                      <span id="cvtxtREmail" className="hide">
+                        <span className="help-block has-error">Please enter valid email address.</span>
                       </span>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <input type="hidden" name="ctl00$cphBody$hdnRMobileNumExists" id="hdnRMobileNumExists" value="0"/>
-                      <label class="control-label compulsory">Mobile Number</label>
-                      <div class="input-group">
-                        <span class="input-group-addon">+27 </span>
-                        <input name="ctl00$cphBody$txtRMobileNumber" type="text" maxlength="9" id="txtRMobileNumber" tabindex="164" class="numeric form-control" placeholder="Enter Mobile Number"/>
+                      <label className="control-label compulsory">Mobile Number</label>
+                      <div className="input-group">
+                        <span className="input-group-addon">+27 </span>
+                        <input name="ctl00$cphBody$txtRMobileNumber" type="text" maxlength="9" id="txtRMobileNumber" tabindex="164" className="numeric form-control" placeholder="Enter Mobile Number"/>
                       </div>
-                      <span id="rfvtxtRMobileNumber" class="hide">
-                        <span class="help-block has-error">Please enter mobile number</span>
+                      <span id="rfvtxtRMobileNumber" className="hide">
+                        <span className="help-block has-error">Please enter mobile number</span>
                       </span>
-                      <span id="csttxtRMobileNumber" class="hide">
-                        <span class="help-block has-error">Please valid mobile number</span>
+                      <span id="csttxtRMobileNumber" className="hide">
+                        <span className="help-block has-error">Please valid mobile number</span>
                       </span>
                     </div>
-                    <label class="control-label">Login with </label>
-                    <div class="social-buttons clearfix">
-                      <a onclick="fb_login(this,1);" tabindex="169" class="btn social-btn facebook">
-                        <i class="fa fa-facebook"></i>Facebook
+                    <label className="control-label">Login with </label>
+                    <div className="social-buttons clearfix">
+                      <a onclick="fb_login(this,1);" tabindex="169" className="btn social-btn facebook">
+                        <i className="fa fa-facebook"></i>Facebook
                       </a>
-                      <div id="customgprlogin" tabindex="170" class="btn social-btn googleplus customGPlusSignIn" data-gapiattached="true">
-                        <i class="fa fa-google-plus"></i>Google+
+                      <div id="customgprlogin" tabindex="170" className="btn social-btn googleplus customGPlusSignIn" data-gapiattached="true">
+                        <i className="fa fa-google-plus"></i>Google+
                       </div>
-                      <a id="linkedInBtn" class="btn social-btn linkedin" style={{cursor: 'pointer'}} onclick="jsfn_LinkedInLogin(1)">
-                        <i class="fa fa-linkedin"></i>LinkedIn
+                      <a id="linkedInBtn" className="btn social-btn linkedin" style={{cursor: 'pointer'}} onclick="jsfn_LinkedInLogin(1)">
+                        <i className="fa fa-linkedin"></i>LinkedIn
                       </a>
                     </div>
-                    <div class="form-group clearfix">
-                      <div class="pull-right">
-                        <input type="button" id="cmdRegPrev" class="request" value="Previous" tabindex="165" onClick={this.cmdRegPrev}/>
-                        <input type="button" id="cmdRegNext" class="request marginleft10" value="Request" tabindex="166" onClick={this.cmdRegNext}/>
+                    <div className="form-group clearfix">
+                      <div className="pull-right">
+                        <input type="button" id="cmdRegPrev" className="request" value="Previous" tabindex="165" onClick={this.cmdRegPrev}/>
+                        <input type="button" id="cmdRegNext" className="request marginleft10" value="Request" tabindex="166" onClick={this.cmdRegNext}/>
                       </div>
                     </div>
-                    <div class="clearfix"></div>
+                    <div className="clearfix"></div>
                   </div>
 
-                  <div id="dvLoginDetails" class="hide">
-                    <h4 class="tag">Login</h4>
-                    <hr class="sec-divider"/>
-                    <div class="form-group">
-                      <label class="control-label compulsory">User Name</label>
-                      <input name="ctl00$cphBody$txtRUserName" type="text" id="txtRUserName" tabindex="167" class="control-label" />
-                      <span id="rfvtxtRUserName" class="hide">
-                        <span class="help-block has-error">Please enter username.</span>
+                  <div id="dvLoginDetails" className="hide">
+                    <h4 className="tag">Login</h4>
+                    <hr className="sec-divider"/>
+                    <div className="form-group">
+                      <label className="control-label compulsory">User Name</label>
+                      <input name="ctl00$cphBody$txtRUserName" type="text" id="txtRUserName" tabindex="167" className="control-label" />
+                      <span id="rfvtxtRUserName" className="hide">
+                        <span className="help-block has-error">Please enter username.</span>
                       </span>
                     </div>
-                    <div class="form-group">
-                      <label class="control-label compulsory">Password</label>
-                      <input name="ctl00$cphBody$txtRPassword" type="password" id="txtRPassword" tabindex="168" class="control-label" />
-                      <span id="rfvtxtRPassword" class="hide">
-                        <span class="help-block has-error">Please enter password.</span>
+                    <div className="form-group">
+                      <label className="control-label compulsory">Password</label>
+                      <input name="ctl00$cphBody$txtRPassword" type="password" id="txtRPassword" tabindex="168" className="control-label" />
+                      <span id="rfvtxtRPassword" className="hide">
+                        <span className="help-block has-error">Please enter password.</span>
                       </span>
                     </div>
-                    <div class="clearfix">
-                      <div class="pull-right">
-                          <input type="button" id="cmdULPrev" class="request" value="Previous" tabindex="171" />
-                          <input type="button" id="cmdULNext" class="request marginleft10" value="Login &amp;Request" tabindex="172" />
+                    <div className="clearfix">
+                      <div className="pull-right">
+                          <input type="button" id="cmdULPrev" className="request" value="Previous" tabindex="171" />
+                          <input type="button" id="cmdULNext" className="request marginleft10" value="Login &amp;Request" tabindex="172" />
                       </div>
                     </div>
                     <div style={{clear: 'both'}}></div>
@@ -630,23 +630,23 @@ class HomePage extends React.Component {
           </div>
         </section>
 
-        <section class="opportunity">
-          <div class="container">
-            <div class="innercontainer" style={{margin: '0 auto'}}>
+        <section className="opportunity">
+          <div className="container">
+            <div className="innercontainer" style={{margin: '0 auto'}}>
               <h1>Enter the world of Opportunity!</h1>
-              <div class="row">
-                <div class="col-md-5">
+              <div className="row">
+                <div className="col-md-5">
                   <a href="/business-package-selection-page">
-                    <div class="reg_col">
+                    <div className="reg_col">
                       <h2>Business User </h2>
                       <h3>Take your business to the next level </h3>
                     </div>
                   </a>
                 </div>
-                <div class="col-md-2"><div class="or">or</div></div>
-                <div class="col-md-5">
+                <div className="col-md-2"><div className="or">or</div></div>
+                <div className="col-md-5">
                   <a href="/individual-registration-page">
-                    <div class="reg_col reg_col2">
+                    <div className="reg_col reg_col2">
                       <h2>Seeker</h2>
                       <h3>Find your requirements here with ease</h3>
                     </div>
@@ -657,19 +657,19 @@ class HomePage extends React.Component {
           </div>
         </section>
 
-        <section class="section_business">
-          <div class="container">
+        <section className="section_business">
+          <div className="container">
             <h1>Search for any Business </h1>
             <p>in the Industrial & Manufacturing industry.</p>
             <p>Search by Company Name, Category or Location</p>
                 
-            <div class="business_form">
+            <div className="business_form">
               <form>
-                <div class="row">
-                  <div class="col-md-4">
+                <div className="row">
+                  <div className="col-md-4">
                     <input type="text" name="" placeholder="Search by Company name"/>
                   </div>
-                  <div class="col-md-4">
+                  <div className="col-md-4">
                     {selectData.map((selectItem, selectKey) => {
                       if(selectItem.id === 'province'){
                         return (
@@ -684,7 +684,7 @@ class HomePage extends React.Component {
                       ;}                      
                     )}   
                   </div>
-                  <div class="col-md-4">
+                  <div className="col-md-4">
                     {selectData.map((selectItem, selectKey) => {
                       if(selectItem.id === 'city'){
                         return (
@@ -700,8 +700,8 @@ class HomePage extends React.Component {
                     )}   
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-6">
+                <div className="row">
+                  <div className="col-md-6">
                     {selectData.map((selectItem, selectKey) => {
                       if(selectItem.id === 'suburb'){
                         return (
@@ -716,7 +716,7 @@ class HomePage extends React.Component {
                       ;}                      
                     )}   
                   </div>
-                  {/* <div class="col-md-6">
+                  {/* <div className="col-md-6">
                     {selectData.map((selectItem, selectKey) => {
                       if(selectItem.id === 'stock'){
                         return (
@@ -732,8 +732,8 @@ class HomePage extends React.Component {
                     )}   
                   </div> */}
                 </div>
-                <div class="row text-center">
-                  <input class="searchbtn" type="submit" name="" value="search"/>
+                <div className="row text-center">
+                  <input className="searchbtn" type="submit" name="" value="search"/>
                 </div>  
               </form>
             </div>

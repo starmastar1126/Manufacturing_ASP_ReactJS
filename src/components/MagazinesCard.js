@@ -4,13 +4,13 @@ class MagazinesCard extends React.Component {
     render() {
         const { fromDate, toDate, image, company, suburb, category, description} = this.props;
         return (  
-          <div class="col-md-6 col-sm-6 text-center">
-            <div class="search_box clearfix">                   
-              <div class="search_img">
+          <div className="col-md-6 col-sm-6 text-center">
+            <div className="search_box clearfix">
+              <div className="search_img">
                 <a href={image}><img src={image} alt=""/></a>
                 {/* <a href={image}><img src={image} alt=""/></a> */}
               </div>
-              <div class="meta">
+              <div className="meta">
                 <ul>
                   <li><a href="#">{company.length > 20 ? company.substring(0, 20) + "...": company}</a></li>
                   <li>{suburb.length > 20 ? suburb.substring(0, 20) + "...": suburb}</li>
@@ -21,9 +21,9 @@ class MagazinesCard extends React.Component {
               <div style={{height: '50px', overflow: 'hidden'}}>
                 <p>{description}</p>
               </div>
-              <div class="read_more">
+              <div className="read_more">
                 <a href="/view-magazines-details-page">Read More</a>
-                <a href="#" class="contact_bussiness">Contact Business</a>
+                <a href="#" className="contact_bussiness">Contact Business</a>
               </div>
             </div>
           </div>

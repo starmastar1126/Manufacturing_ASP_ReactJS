@@ -45,12 +45,12 @@ class ContactUsPage extends React.Component {
           title = {'Contact Us'}
         />
         
-        <section class="contact_area">    
-          <div class="container">
-            <div class="heading">Contact Us</div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="contact_info">
+        <section className="contact_area">
+          <div className="container">
+            <div className="heading">Contact Us</div>
+            <div className="row">
+              <div className="col-md-6">
+                <div className="contact_info">
                   {contactCardData.map((contactCardItem, contactCardKey) => {
                     return (
                       <ContactCard
@@ -64,45 +64,45 @@ class ContactUsPage extends React.Component {
                   )}      
                 </div>
               </div>
-                  <div class="col-md-6">
-                    <div class="contact_form">
+                  <div className="col-md-6">
+                    <div className="contact_form">
                       <h2><span>Stay In</span> Touch</h2>
                       <form>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
+                        <div className="form-row">
+                          <div className="form-group col-md-6">
                             <label for="">First Name*</label>
-                            <input type="text" class="form-control" id="" placeholder=""/>
+                            <input type="text" className="form-control" id="" placeholder=""/>
                           </div>
-                          <div class="form-group col-md-6">
+                          <div className="form-group col-md-6">
                             <label for="">Last Name*</label>
-                            <input type="text" class="form-control" id="" placeholder=""/>
+                            <input type="text" className="form-control" id="" placeholder=""/>
                           </div>
                         </div>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
+                        <div className="form-row">
+                          <div className="form-group col-md-6">
                             <label for="">Phone</label>
-                            <input type="text" class="form-control" id="" placeholder=""/>
+                            <input type="text" className="form-control" id="" placeholder=""/>
                           </div>
-                          <div class="form-group col-md-6">
+                          <div className="form-group col-md-6">
                             <label for=""> Email*</label>
-                            <input type="email" class="form-control" id="" placeholder=""/>
+                            <input type="email" className="form-control" id="" placeholder=""/>
                           </div>
                         </div>                
-                        <div class="form-row">
-                          <div class="form-group col-md-12">
+                        <div className="form-row">
+                          <div className="form-group col-md-12">
                             <label for="">Subject*</label>
-                            <input type="text" class="form-control" id="" placeholder=""/>
+                            <input type="text" className="form-control" id="" placeholder=""/>
                           </div>  
                         </div>
-                        <div class="form-row">
-                          <div class="form-group col-md-12">
+                        <div className="form-row">
+                          <div className="form-group col-md-12">
                             <label for="">Message*</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+                            <textarea className="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
                           </div>  
                         </div>
-                        <div class="form-row">
-                          <div class="col-md-12">
-                            <button type="submit" class="sub_btt">SUBMIT</button>
+                        <div className="form-row">
+                          <div className="col-md-12">
+                            <button type="submit" className="sub_btt">SUBMIT</button>
                           </div>
                         </div>
                       </form>

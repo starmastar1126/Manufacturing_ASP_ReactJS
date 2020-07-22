@@ -20,6 +20,15 @@ import LoginPage from './views/LoginPage';
 import IndividualRegistrationPage from './views/IndividualRegistrationPage';
 // import ProductsListPage from './views/ProductsListPage';
 
+import PaymentPage from './views/PaymentPage';
+import PayPalPaymentPage from './views/paypal/PayPalPaymentPage';
+import PayPalCancelPage from './views/paypal/PayPalCancelPage';
+import PayPalReturnPage from './views/paypal/PayPalReturnPage';
+import PayFastPaymentPage from './views/payfast/PayFastPaymentPage';
+import PayFastCancelPage from './views/payfast/PayFastCancelPage';
+import PayFastNotifyPage from './views/payfast/PayFastNotifyPage';
+import PayFastReturnPage from './views/payfast/PayFastReturnPage';
+
 const routes = [
     { path: '/', exact: true, name: 'Home Page', component: HomePage },
     { path: '/home-page', name: 'Home Page', component: HomePage },
@@ -40,6 +49,15 @@ const routes = [
     { path: '/login-page', name: 'Login Page', component: LoginPage },
     { path: '/individual-registration-page', name: 'Individual Registration Page', component: IndividualRegistrationPage },
     // { path: '/products-list-page', name: 'Products List Page', component: ProductsListPage },
+
+    { path: '/payment-page', name: 'Payment Page', component: PaymentPage },
+    { path: '/paypal-payment-page', name: 'PayPal Payment Page', component: PayPalPaymentPage },
+    { path: '/paypal-cancel-page', name: 'PayPal Cancel Page', component: PayPalCancelPage },
+    { path: '/paypal-return-page', name: 'PayPal Return Page', component: PayPalReturnPage },
+    { path: '/payfast-payment-page', name: 'PayFast Payment Page', component: PayFastPaymentPage },
+    { path: '/payfast-cancel-page', name: 'PayFast Cancel Page', component: PayFastCancelPage },
+    { path: '/payfast-notify-page', name: 'PayFast Notify Page', component: PayFastNotifyPage },
+    { path: '/payfast-return-page', name: 'PayFast Return Page', component: PayFastReturnPage },
 ];
 
 export default routes;

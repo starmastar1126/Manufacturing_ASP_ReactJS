@@ -1,16 +1,31 @@
 
-.left-sidebar {
-    width: 280px;
-    height: 50px;
-    margin-top: 20px;
-    border: 1px solid rgb(204, 202, 202);
-    border-radius: 5px;
-    overflow: hidden;
-}
-.left-sidebar:hover{
+.home-category-ads {
     width: 100%;
     height: 400px;
+    position: relative;
+    display: flex;
+}
+.left-sidebar {
+    width: 280px;
+    height: 400px;
+    /*margin-top: 20px;*/
+    border: 1px solid rgb(204, 202, 202);
+    border-radius: 5px;
+    position: unset;
+}
+.left-popup{
+    width: 100%;
+    height: 400px;
+    z-index: 3000;
+    overflow: hidden;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.home-ads {
+    width: 100%;
+    height: 400px;
+    margin-left: 20px;
+    background-color: #faf2cc;
+    z-index: 0;
 }
 .left-panel {
     width: 100%;
@@ -30,6 +45,7 @@
     padding-left: 20px;
     padding-top: 13px;
     font-size: 15px;
+    cursor: pointer;
 }
 .element{
     width: 280px;
@@ -38,6 +54,7 @@
     padding-left: 20px;
     padding-top: 15px;
     font-size: 13px;
+    cursor: pointer;
 }
 .element:hover {
     width: 280px;

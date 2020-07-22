@@ -251,12 +251,12 @@ class SpecialListPage extends React.Component {
           bgImage = {bgImage}
           title = {'View Special List'}
         />
-        <section class="viewspecial ">
-          <div class="container">
-            <div class="search_list viewspecial_magazin special_grid">
-              <div class="row">
-                <div class="col-md-8">
-                  <div class="row">
+        <section className="viewspecial ">
+          <div className="container">
+            <div className="search_list viewspecial_magazin special_grid">
+              <div className="row">
+                <div className="col-md-8">
+                  <div className="row">
                     {specialCardData.map((specialCardItem, specialCardKey) => {
                       return (
                         <SpecialCard
@@ -276,19 +276,19 @@ class SpecialListPage extends React.Component {
                     />     
                   </div>
 
-                  <div class="col-md-4">    
-                    <div class="filter filter_area clearfix">
+                  <div className="col-md-4">
+                    <div className="filter filter_area clearfix">
                       <h2>Search Filters</h2>
-                      <div class="filter_form">
+                      <div className="filter_form">
                       <form>            
-                        <div class="form-group">
+                        <div className="form-group">
                           <label> Title</label>
                           <div>
-                            <input type="text" class="form-control" id="" placeholder=""/>
+                            <input type="text" className="form-control" id="" placeholder=""/>
                           </div>
                         </div>
                         
-                        <div class="form-group ">
+                        <div className="form-group ">
                           <label for="">Company</label>
                           <div>
                             {selectData.map((selectItem, selectKey) => {
@@ -303,7 +303,7 @@ class SpecialListPage extends React.Component {
                             )}     
                           </div>
                         </div>
-                        <div class="form-group ">
+                        <div className="form-group ">
                           <label for="">Category</label>
                           <div>
                             {selectData.map((selectItem, selectKey) => {
@@ -318,7 +318,7 @@ class SpecialListPage extends React.Component {
                             )}    
                           </div>
                         </div>
-                        <div class="form-group ">
+                        <div className="form-group ">
                           <label for="">Province</label>
                           <div>
                             {selectData.map((selectItem, selectKey) => {
@@ -333,7 +333,7 @@ class SpecialListPage extends React.Component {
                             )}    
                           </div>
                         </div>
-                        <div class="form-group ">
+                        <div className="form-group ">
                           <label for="">City</label>
                           <div>
                             {selectData.map((selectItem, selectKey) => {
@@ -348,7 +348,7 @@ class SpecialListPage extends React.Component {
                             )}    
                           </div>
                         </div>
-                        <div class="form-group ">
+                        <div className="form-group ">
                           <label for=""> Suburb </label>
                           <div>
                             {selectData.map((selectItem, selectKey) => {
@@ -363,9 +363,9 @@ class SpecialListPage extends React.Component {
                             )}    
                           </div>
                         </div>              
-                        <div class="form-group row">               
-                          <div class="col-md-3">
-                            <button type="submit" class="btn btn-primary checkout_sub_btt">Search</button>
+                        <div className="form-group row">
+                          <div className="col-md-3">
+                            <button type="submit" className="btn btn-primary checkout_sub_btt">Search</button>
                           </div>                
                         </div>              
                       </form>

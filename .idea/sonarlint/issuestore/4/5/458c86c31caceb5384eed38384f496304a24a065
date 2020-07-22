@@ -1,0 +1,8 @@
+
+pjavascript:S2814£"NRename "$activePanel" as this name is already used in declaration at line 161.(šôê‘ûÿÿÿÿ
+fjavascript:UnusedVariableÖ";Remove the declaration of the unused 'the_return' variable.(†¥Õúûÿÿÿÿ
+Yjavascript:S1854Ô"<Remove this useless assignment to local variable "fileInput"(éÌ“È
+[javascript:S1854Õ"9Remove this useless assignment to local variable "button"(ÉÒĞîøÿÿÿÿ
+`javascript:UnusedVariableÔ":Remove the declaration of the unused 'fileInput' variable.(éÌ“È
+_javascript:S1854Ö"=Remove this useless assignment to local variable "the_return"(†¥Õúûÿÿÿÿ
+bjavascript:UnusedVariableÕ"7Remove the declaration of the unused 'button' variable.(ÉÒĞîøÿÿÿÿ

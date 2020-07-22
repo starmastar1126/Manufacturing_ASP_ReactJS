@@ -37,12 +37,12 @@
                 var id = 'lightbox-' + Math.floor((Math.random() * 100000) + 1);
 
                 $('body').append(
-                    '<div id="' + id + '" class="lightbox" style="display:none;">' +
-                    '<div class="lightfffbox">' +
-                    '<a href="#" class="lightbox__close lightbox__button"></a>' +
-                    '<a href="#" class="lightbox__nav lightbox__nav--prev lightbox__button"></a>' +
-                    '<a href="#" class="lightbox__nav lightbox__nav--next lightbox__button"></a>' +
-                    '<div href="#" class="lightbox__caption"><p></p></div>' +
+                    '<div id="' + id + '" className="lightbox" style="display:none;">' +
+                    '<div className="lightfffbox">' +
+                    '<a href="#" className="lightbox__close lightbox__button"></a>' +
+                    '<a href="#" className="lightbox__nav lightbox__nav--prev lightbox__button"></a>' +
+                    '<a href="#" className="lightbox__nav lightbox__nav--next lightbox__button"></a>' +
+                    '<div href="#" className="lightbox__caption"><p></p></div>' +
               
                     '</div>' +
                     '</div>'
@@ -67,7 +67,7 @@
                     $("body").addClass("blurred");
                 }
                 $("img", plugin.lightbox).remove();
-                plugin.lightbox.fadeIn('fast').append('<span class="lightbox__loading"></span>');
+                plugin.lightbox.fadeIn('fast').append('<span className="lightbox__loading"></span>');
 
                 var img = $('<img src="' + $(plugin.current).attr('href') + '" draggable="false">');
 

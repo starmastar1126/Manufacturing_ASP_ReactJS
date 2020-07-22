@@ -11,8 +11,8 @@ class CompetitionPage extends React.Component {
               bgImage = {bgImage}
               title = {'Competition'}
             />
-            <section class="breadcrumbs">
-              <div class="container">
+            <section className="breadcrumbs">
+              <div className="container">
                 <ul>
                   <li><a href="/home-page">Home</a></li>
                   <li><a href="">Competition</a></li>
@@ -20,21 +20,21 @@ class CompetitionPage extends React.Component {
               </div>
             </section>
             <br />
-            <div class="container" data-animated="fadeInDown">
-              <div class="row">
-                <div class="col-sm-12">
-                  <h3 class="headline">Terms & Conditions for Request Product or Service www.EzyFind.co.za Competition</h3>
-                  <span class="brd-headling"></span>
+            <div className="container" data-animated="fadeInDown">
+              <div className="row">
+                <div className="col-sm-12">
+                  <h3 className="headline">Terms & Conditions for Request Product or Service www.EzyFind.co.za Competition</h3>
+                  <span className="brd-headling"></span>
                   <hr />
                 </div>
-                <div class="col-sm-12">
-                  <ul class="list-2">
+                <div className="col-sm-12">
+                  <ul className="list-2">
                     <li><p>This Promotional Competition (“Competition”) is organised and run by www.EzyFind.co.za and Innovation Evolved (Proprietary) Limited, including its affiliates, partners, associations and agents (“Organisers”). The Competition is open for entry by all South African residents of 18 years and older with a valid South African identity book, except employees of the Organisers and its advertising and/or promotion agencies, outlet owners, retailers and wholesalers that form part of the Competition and their immediate families. The Competition is not open for entry by or on behalf of a legal entity and participants cannot use the account of a legal entity to enter the Competition.</p></li>
                     <li><p>By entering this Competition, all participants agree to be bound by these terms and conditions, which will be interpreted by the Organisers and the Organisers’ decision regarding any issue with the Competition will be final and binding and no correspondence will be entered into.</p></li>
                     <li><p>This is an online-entry based Competition. Entry will only be via the mobile application for iPhone, Android & Windows Microsoft. Entry confirmation is automatically captured on your request via the mobile applications. </p></li>
                     <li><p>No responsibility will be accepted for any entry that is not delivered, received or is delayed or damaged due to technical reasons or otherwise. Proof of sending is not proof of receipt.</p></li>
                     <li><p>To enter this Competition, all participants are required to – </p>
-                      <ul class="list-2">
+                      <ul className="list-2">
                         <li><p>Request a Product or Service via the EzyFind mobile application from the app store for iPhone, Android or Microsoft Windows.</p></li>
                         <li><p>Each request via the mobile application and completed purchase, will be considered as a valid entry to the competition</p></li>
                       </ul>
@@ -43,9 +43,9 @@ class CompetitionPage extends React.Component {
                     <li><p><b>PARTICIPANTS ARE REQUIRED TO PURCHASE THE REQUESTED PRODUCT OR SERVICE TO ENTER THIS COMPETITION</b></p></li>
                     <li>
                       <p><b>Prizes</b></p>
-                      <ul class="list-2">
+                      <ul className="list-2">
                         <li><p>The prizes are as follows - </p>
-                          <ul class="list-2"><li><p>2 x Cash Vouchers valued at R2 000 each</p></li></ul>
+                          <ul className="list-2"><li><p>2 x Cash Vouchers valued at R2 000 each</p></li></ul>
                         </li>
                         <li><p>Participants may enter multiple times, however regardless of the amount of entries, participants will only be entitled to 1 (one) prize should they be selected as the winner</p></li>
                         <li><p>The prizes may differ from that shown on the promotional material with regard to colour and specs and same shall be subject to availability and in the Organiser’s sole discretion to select same</p></li>
@@ -56,7 +56,7 @@ class CompetitionPage extends React.Component {
                     </li>
                     <li>
                       <p><b>Competition Draw</b></p>
-                      <ul class="list-2">
+                      <ul className="list-2">
                         <li><p>The winners will be selected randomly by an official external auditor</p></li>
                         <li><p>The winners will be announced within 15 (fifteen) working days of the closing date of the Competition</p></li>
                         <li><p>The winners will be contacted via telephone or via email direct message</p></li>
@@ -67,10 +67,10 @@ class CompetitionPage extends React.Component {
                     </li>
                     <li>
                       <p><b>Winners </b></p>
-                      <ul class="list-2">
+                      <ul className="list-2">
                         <li><p>The winners of the prizes will receive their prizes 5 (five) to 10 (ten) working days after being notified as having won the Prize</p></li>
                         <li><p>The winners will need to provide the following to the Organisers within 15 (fifteen) working days of date being notified of their prize,  in order to receive their prize – </p>
-                          <ul class="list-2"><li><p>positive identification to the Organisers, including a valid South African identity book</p></li></ul>
+                          <ul className="list-2"><li><p>positive identification to the Organisers, including a valid South African identity book</p></li></ul>
                         </li>
                         <li><p>Regardless of the amount of entries per participant, there will be only 2 (Two) individual winners</p></li>
                       </ul>

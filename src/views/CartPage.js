@@ -19,36 +19,36 @@ class BusinessListPage extends React.Component {
           title = {'Cart'}
         />
 
-<section class="cart_page cart_page_add">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-9">
-        <div class="cart_header clearfix">
-          <div class="shipping_btt shipping_btt_add shipping_btt_add_d"><a href="#">Continue Shopping</a></div>
-          <div class="item_info">You have 2 items in your cart</div>
-          <div class="btt_sec clearfix">
-            <div class="shipping_btt shipping_btt_add shipping_btt_add_m"><a href="#">Continue Shopping</a></div> 
-            <div class="emty_cart_btt emty_cart_btt_m"><a href="#">Empty cart</a></div>
+<section className="cart_page cart_page_add">
+  <div className="container">
+    <div className="row">
+      <div className="col-md-9">
+        <div className="cart_header clearfix">
+          <div className="shipping_btt shipping_btt_add shipping_btt_add_d"><a href="#">Continue Shopping</a></div>
+          <div className="item_info">You have 2 items in your cart</div>
+          <div className="btt_sec clearfix">
+            <div className="shipping_btt shipping_btt_add shipping_btt_add_m"><a href="#">Continue Shopping</a></div>
+            <div className="emty_cart_btt emty_cart_btt_m"><a href="#">Empty cart</a></div>
           </div>
         </div> 
-        <div class="cart_item_col_page">
-          <div class="cart_item_col clearfix">
-            <div class="cart_item_image">
+        <div className="cart_item_col_page">
+          <div className="cart_item_col clearfix">
+            <div className="cart_item_image">
               <a href={categoryImage}><img src={categoryImage} alt="Image"/></a>
               {/* <a href={categoryImage}><img src={categoryImage} alt="Image"/></a> */}
             </div>
-            <div class="cart_item_details">
+            <div className="cart_item_details">
               <h2>Appointment Of Sole Selling Agent For A District Or Town</h2>
               <p>Appointment of sole selling agent for a district or town. MEMORANDUM OF AGREEMENT</p>
               <h3>R 99.00</h3>
             </div>
           </div>
-          <div class="cart_item_col clearfix">
-            <div class="cart_item_image">
+          <div className="cart_item_col clearfix">
+            <div className="cart_item_image">
               <a href={categoryImage}><img src={categoryImage} alt="Image"/></a>
               {/* <a href={categoryImage}><img src={categoryImage} alt="Image"/></a> */}
             </div>
-            <div class="cart_item_details">
+            <div className="cart_item_details">
               <h2>Appointment Of Sole Selling Agent For A District Or Town</h2>
               <p>Appointment of sole selling agent for a district or town. MEMORANDUM OF AGREEMENT</p>
               <h3>R 99.00</h3>
@@ -56,79 +56,79 @@ class BusinessListPage extends React.Component {
           </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="cart-order-sec">
+      <div className="col-md-3">
+        <div className="cart-order-sec">
           <h2>Your Cart Total</h2>
           <p>R 198.00</p>
-          <div class="checkout_btt"><a href="#">Checkout</a></div>
+          <div className="checkout_btt"><a href="#">Checkout</a></div>
         </div>
       </div> 
     </div>
   </div>
 </section>
 
-<section class="related_product related_product_add">
-  <div class="container">
-    <div class="heading">Related Products</div>
-    <div class="related_product_slider">
-      <div class="product_col">
-        <div class="product_image"><img src={productImage} alt=""/></div>
+<section className="related_product related_product_add">
+  <div className="container">
+    <div className="heading">Related Products</div>
+    <div className="related_product_slider">
+      <div className="product_col">
+        <div className="product_image"><img src={productImage} alt=""/></div>
           <h2>Appointment Of Sole Selling Agent For A District Or Town</h2>
           <p>Appointment of sole selling agent for a district or town. MEMORANDUM OF AGREEMENT</p>
-          <div class="price">R 1,500.00</div>
-          <div class="btt_area clearfix">
-            <div class="buy_now"><a href="#">Buy Now</a></div>
-            <div class="cart_btt"><a href="#">Add to cart</a></div>
+          <div className="price">R 1,500.00</div>
+          <div className="btt_area clearfix">
+            <div className="buy_now"><a href="#">Buy Now</a></div>
+            <div className="cart_btt"><a href="#">Add to cart</a></div>
           </div>
         </div>
-        <div class="product_col">
-          <div class="product_image"><img src={productImage} alt=""/></div>
+        <div className="product_col">
+          <div className="product_image"><img src={productImage} alt=""/></div>
           <h2>Appointment Of Sole Selling Agent For A District Or Town</h2>
           <p>Appointment of sole selling agent for a district or town. MEMORANDUM OF AGREEMENT</p>
-          <div class="price">R 1,500.00</div>
-          <div class="btt_area clearfix">
-            <div class="buy_now"><a href="#">Buy Now</a></div>
-            <div class="cart_btt"><a href="#">Add to cart</a></div>
+          <div className="price">R 1,500.00</div>
+          <div className="btt_area clearfix">
+            <div className="buy_now"><a href="#">Buy Now</a></div>
+            <div className="cart_btt"><a href="#">Add to cart</a></div>
           </div>
         </div>
-        <div class="product_col">
-          <div class="product_image"><img src={productImage} alt=""/></div>
+        <div className="product_col">
+          <div className="product_image"><img src={productImage} alt=""/></div>
           <h2>Appointment Of Sole Selling Agent For A District Or Town</h2>
           <p>Appointment of sole selling agent for a district or town. MEMORANDUM OF AGREEMENT</p>
-          <div class="price">R 1,500.00</div>
-          <div class="btt_area clearfix">
-              <div class="buy_now"><a href="#">Buy Now</a></div>
-              <div class="cart_btt"><a href="#">Add to cart</a></div>
+          <div className="price">R 1,500.00</div>
+          <div className="btt_area clearfix">
+              <div className="buy_now"><a href="#">Buy Now</a></div>
+              <div className="cart_btt"><a href="#">Add to cart</a></div>
           </div>
         </div>  
-        <div class="product_col">
-          <div class="product_image"><img src={productImage} alt=""/></div>
+        <div className="product_col">
+          <div className="product_image"><img src={productImage} alt=""/></div>
           <h2>Appointment Of Sole Selling Agent For A District Or Town</h2>
           <p>Appointment of sole selling agent for a district or town. MEMORANDUM OF AGREEMENT</p>
-          <div class="price">R 1,500.00</div>
-          <div class="btt_area clearfix">
-            <div class="buy_now"><a href="#">Buy Now</a></div>
-            <div class="cart_btt"><a href="#">Add to cart</a></div>
+          <div className="price">R 1,500.00</div>
+          <div className="btt_area clearfix">
+            <div className="buy_now"><a href="#">Buy Now</a></div>
+            <div className="cart_btt"><a href="#">Add to cart</a></div>
           </div>
         </div>
-        <div class="product_col">
-          <div class="product_image"><img src={productImage} alt=""/></div>
+        <div className="product_col">
+          <div className="product_image"><img src={productImage} alt=""/></div>
           <h2>Appointment Of Sole Selling Agent For A District Or Town</h2>
           <p>Appointment of sole selling agent for a district or town. MEMORANDUM OF AGREEMENT</p>
-          <div class="price">R 1,500.00</div>
-          <div class="btt_area clearfix">
-            <div class="buy_now"><a href="#">Buy Now</a></div>
-            <div class="cart_btt"><a href="#">Add to cart</a></div>
+          <div className="price">R 1,500.00</div>
+          <div className="btt_area clearfix">
+            <div className="buy_now"><a href="#">Buy Now</a></div>
+            <div className="cart_btt"><a href="#">Add to cart</a></div>
           </div>
         </div>
-        <div class="product_col">
-          <div class="product_image"><img src={productImage} alt=""/></div>
+        <div className="product_col">
+          <div className="product_image"><img src={productImage} alt=""/></div>
           <h2>Appointment Of Sole Selling Agent For A District Or Town</h2>
           <p>Appointment of sole selling agent for a district or town. MEMORANDUM OF AGREEMENT</p>
-          <div class="price">R 1,500.00</div>
-          <div class="btt_area clearfix">
-            <div class="buy_now"><a href="#">Buy Now</a></div>
-            <div class="cart_btt"><a href="#">Add to cart</a></div>
+          <div className="price">R 1,500.00</div>
+          <div className="btt_area clearfix">
+            <div className="buy_now"><a href="#">Buy Now</a></div>
+            <div className="cart_btt"><a href="#">Add to cart</a></div>
           </div>
         </div>
       </div>

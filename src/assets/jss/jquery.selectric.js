@@ -512,7 +512,7 @@
       $.each(items, function(i, elm) {
         if ( elm.label !== undefined ) {
 
-          markup += _this.utils.format('<ul class="{1}"><li class="{2}">{3}</li>',
+          markup += _this.utils.format('<ul className="{1}"><li className="{2}">{3}</li>',
             _this.utils.arrayToClassname([
               _this.classes.group,
               elm.groupDisabled ? 'disabled' : '',
@@ -557,7 +557,7 @@
         index: itemData.index
       };
 
-      return _this.utils.format('<li data-index="{1}" class="{2}">{3}</li>',
+      return _this.utils.format('<li data-index="{1}" className="{2}">{3}</li>',
         index,
         _this.utils.arrayToClassname([
           itemData.className,
@@ -1090,7 +1090,7 @@
     onChange             : function(elm) { $(elm).change(); },
     maxHeight            : 300,
     keySearchTimeout     : 500,
-    arrowButtonMarkup    : '<b class="button">&#x25be;</b>',
+    arrowButtonMarkup    : '<b className="button">&#x25be;</b>',
     disableOnMobile      : false,
     nativeOnMobile       : true,
     openOnFocus          : true,

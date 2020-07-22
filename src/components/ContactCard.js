@@ -4,9 +4,9 @@ class ContactCard extends React.Component {
   render() {
     const { className, aLink, title, description} = this.props;
     return (  
-      <div class="contact_info_col">
+      <div className="contact_info_col">
         <p>{title}</p>
-        <a href={aLink}><i class={className} aria-hidden="true"></i> {description}</a>
+        <a href={aLink}><i className={className} aria-hidden="true"></i> {description}</a>
       </div>
     );
   }

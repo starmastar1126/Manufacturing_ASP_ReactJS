@@ -155,19 +155,19 @@ class ProductListPage extends React.Component {
     var settings = { dots: true, infinite: true, speed: 500, slidesToShow: 1, slidesToScroll: 1 };
     return (
       <div>
-        <section class="viewspecial">
-          <div class="container">
-            <div class="col-md-3">
-              <div class="left-panel">
+        <section className="viewspecial">
+          <div className="container">
+            <div className="col-md-3">
+              <div className="left-panel">
                 <dl>
-                  <dt class="category">Search Filter</dt>
+                  <dt className="category">Search Filter</dt>
                 </dl>
               </div>
               <div>
                 
               </div>
             </div>
-            <div class="col-md-9">
+            <div className="col-md-9">
               <div style={{height: '50px', marginTop: '20px', padding: '12px 0 0 20px', border: '1px solid #000', borderRadius: '5px'}}>
                 <a href="#" style={{float: 'left', fontSize: '15px', fontWeight: '300', color: '#000'}}>All Categories >> </a>
                 <a href="#" style={{float: 'left', fontSize: '15px', fontWeight: '300', color: '#000'}}>17-Tong-1-3 >> </a> 
@@ -177,7 +177,7 @@ class ProductListPage extends React.Component {
                 <CategoryCard>
                   {homeItemData.map((productItem, productKey) => {
                     return (
-                      <div class="col-md-4">   
+                      <div className="col-md-4">
                         <ProductCard title={productItem.productTitle} image={productItem.image} price={productItem.price} date={productItem.date} />
                         <hr />
                       </div>

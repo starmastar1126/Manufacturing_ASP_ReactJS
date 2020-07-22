@@ -26,13 +26,13 @@ class Header extends React.Component {
   
     render() {
         return (
-            <div class="sticky">
-            <section class="header">
-                <div class="topheader">
-                    <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="applist">
+            <div className="sticky">
+            <section className="header">
+                <div className="topheader">
+                    <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <div className="applist">
                             <p style={{marginBottom: 0, paddingBottom: 0}}>EZYFIND Apps for</p>
                             <ul>
                                 <li><a href="https://itunes.apple.com/us/app/ezyfind/id980233151?ls=1&mt=8">iPHONE</a></li>
@@ -41,8 +41,8 @@ class Header extends React.Component {
                             </ul>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="lgin">
+                        <div className="col-md-6">
+                            <div className="lgin">
                             <p style={{marginBottom: 0, paddingBottom: 0}}>Hi Guest</p>
                             <ul>
                                 <li><a onClick={this.registerHandler}>Register</a></li>
@@ -54,21 +54,21 @@ class Header extends React.Component {
                     </div>     
                 </div>
 
-                <div class="mainnav">
-                    <div class="container">
-                    <button class="menu-button"></button>
-                    <div class="logo"><a href="/home-page"><img src={logo} alt=""/></a></div>
-                    <nav class="mobile_primary">
-                        <ul id="menu-main-navigation-1" class="menu">
-                        <li class={this.state.active === '/home-page' || this.state.active === '/' ? 'current-menu-item' : ''}><a href='/home-page'>HOME</a></li>
-                        <li class={this.state.active === '/product-list-page' ? 'current-menu-item' : ''}><a href='/product-list-page'>Products</a></li>            
-                        <li class={this.state.active === '/business-list-page' ? 'current-menu-item' : ''}><a href='/business-list-page'>Manufacturers</a></li>            
-                        <li class={this.state.active === '/view-magazines-page' ? 'current-menu-item' : ''}><a href='/view-magazines-page'>Digital Catalogues</a></li>
-                        <li class={this.state.active === '/special-list-page' ? 'current-menu-item' : ''}><a href='/special-list-page'>Specials</a></li>
-                        <li class={this.state.active === '/competition-page' ? 'current-menu-item' : ''}><a href='/competition-page'>Competition</a></li>    
-                        <li class={this.state.active === '/business-package-selection-page' ? 'current-menu-item' : ''}><a href='/business-package-selection-page'>List Your Business</a></li>  
-                        <li class={this.state.active === '/contact-us-page' ? 'current-menu-item' : ''}><a href='/contact-us-page'>Contact</a></li>   
-                        <li class={this.state.active === '/about-us-page' ? 'current-menu-item' : ''}><a href='/about-us-page'>About</a></li>      
+                <div className="mainnav">
+                    <div className="container">
+                    <button className="menu-button"></button>
+                    <div className="logo"><a href="/home-page"><img src={logo} alt=""/></a></div>
+                    <nav className="mobile_primary">
+                        <ul id="menu-main-navigation-1" className="menu">
+                        <li className={this.state.active === '/home-page' || this.state.active === '/' ? 'current-menu-item' : ''}><a href='/home-page'>HOME</a></li>
+                        {/* <li className={this.state.active === '/product-list-page' ? 'current-menu-item' : ''}><a href='/product-list-page'>Products</a></li> */}
+                        <li className={this.state.active === '/business-list-page' ? 'current-menu-item' : ''}><a href='/business-list-page'>Manufacturers</a></li>
+                        <li className={this.state.active === '/view-magazines-page' ? 'current-menu-item' : ''}><a href='/view-magazines-page'>Digital Catalogues</a></li>
+                        <li className={this.state.active === '/special-list-page' ? 'current-menu-item' : ''}><a href='/special-list-page'>Specials</a></li>
+                        <li className={this.state.active === '/competition-page' ? 'current-menu-item' : ''}><a href='/competition-page'>Competition</a></li>
+                        <li className={this.state.active === '/business-package-selection-page' ? 'current-menu-item' : ''}><a href='/business-package-selection-page'>List Your Business</a></li>
+                        <li className={this.state.active === '/contact-us-page' ? 'current-menu-item' : ''}><a href='/contact-us-page'>Contact</a></li>
+                        <li className={this.state.active === '/about-us-page' ? 'current-menu-item' : ''}><a href='/about-us-page'>About</a></li>
                         </ul>         
                     </nav>        
                     </div>

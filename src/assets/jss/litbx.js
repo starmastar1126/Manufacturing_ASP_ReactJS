@@ -93,7 +93,7 @@ var Arrows = function(Litbx, Core) {
 		Core.Build.$inner.after( Litbx.options.tpl.prev );
 		Core.Build.$inner.after( Litbx.options.tpl.next );
 
-		//$( '.' + Litbx.options.classes.inner ).append( '<span class="' + Litbx.options.classes.arrow + ' ' + Litbx.options.classes.arrowNext + '"></span>' );
+		//$( '.' + Litbx.options.classes.inner ).append( '<span className="' + Litbx.options.classes.arrow + ' ' + Litbx.options.classes.arrowNext + '"></span>' );
 
 	//	this.wrapper = Litbx.slider.find('.' + Glide.options.classes.arrows);
 	//	this.items = this.wrapper.children();
@@ -160,7 +160,7 @@ var Build = function(Litbx, Core) {
 
 		// Create wrapper
 		//$( 'body' ).append( Litbx.options.tpl.wrap );
-		//$( Litbx.options.tpl.wrap ).appendTo( 'body' ).after( '<div class="' + Litbx.options.classes.inner + '"></div>' );
+		//$( Litbx.options.tpl.wrap ).appendTo( 'body' ).after( '<div className="' + Litbx.options.classes.inner + '"></div>' );
 
 		$overlay = $( Litbx.options.tpl.overlay ).appendTo( 'body' );
 		this.$wrap = $( Litbx.options.tpl.wrap ).appendTo( $overlay );
@@ -171,7 +171,7 @@ var Build = function(Litbx, Core) {
 			/*
 			.append( '<div></div>' )
 				.find('div:last').addClass( Litbx.options.classes.wrapper )
-				//.append( '<div class="outer"></div>' )
+				//.append( '<div className="outer"></div>' )
 				.append( '<div></div>' )
 					.find('div:last').addClass( Litbx.options.classes.inner );
 			*/
@@ -930,13 +930,13 @@ var Litbx = function ( elements, options, trigger ) {
 
 		// Templates - can't use classes dynamicly here and there is also redundancy
 		tpl: {
-			overlay: '<div class="litbx__overlay"></div>',
-			wrap: '<div class="litbx__wrapper"></div>',
-			inner: '<div class="litbx__inner"></div>',
-			//error    : '<p class="fancybox-error">{{ERROR}}</p>',
-			//closeBtn : '<a title="{{CLOSE}}" class="fancybox-close" href="javascript:;"></a>',
-			next: '<span class="litbx__arrow litbx__arrow--prev"><i class="prev">Prev</i></span>',
-			prev: '<span class="litbx__arrow litbx__arrow--next"><i class="next">Next</i></span>'
+			overlay: '<div className="litbx__overlay"></div>',
+			wrap: '<div className="litbx__wrapper"></div>',
+			inner: '<div className="litbx__inner"></div>',
+			//error    : '<p className="fancybox-error">{{ERROR}}</p>',
+			//closeBtn : '<a title="{{CLOSE}}" className="fancybox-close" href="javascript:;"></a>',
+			next: '<span className="litbx__arrow litbx__arrow--prev"><i className="prev">Prev</i></span>',
+			prev: '<span className="litbx__arrow litbx__arrow--next"><i className="next">Next</i></span>'
 		},
 
 		// Callbacks

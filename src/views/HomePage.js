@@ -18,6 +18,8 @@ import CategoryPanel from '../components/CategoryPanel';
 import CategorySlider from '../components/CategorySlider';
 import CategoryCard from '../components/CategoryCard';
 
+import Custom from '../assets/jss/Custom.jsx';
+import * as Constants from '../constants/Constants';
 
 import slider1 from '../assets/img/sdetails_img1.jpg'
 import slider2 from '../assets/img/special_business.png'
@@ -142,7 +144,29 @@ const autoPlayDelay = 2000;
 class HomePage extends React.Component {
   state = { activeItemIndex: 0 };
 
-  componentDidMount() { this.interval = setInterval(this.tick, autoPlayDelay); }
+  componentDidMount() {
+    this.interval = setInterval(this.tick, autoPlayDelay);
+
+    fetch(Constants.__TEST_SERVER_URL + '/values', {
+      method: 'GET',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      // body: JSON.stringify({
+      //   firstParam: 'yourValue',
+      //   secondParam: 'yourOtherValue',
+      // })
+    })
+      .then((response) => response.json())
+      .then((responseJson) => {
+        console.log(responseJson);
+        alert(responseJson[0]);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+  }
   componentWillUnmount() { clearInterval(this.interval); }
 
   tick = () => this.setState(prevState => ({
@@ -155,22 +179,27 @@ class HomePage extends React.Component {
     var settings = { dots: true, infinite: true, speed: 500, slidesToShow: 1, slidesToScroll: 1 };
     return (
       <div>
-        <section class="viewspecial">
-          <div class="container">
-            <div class="left-sidebar">
+        <Custom/>
+        <section className="viewspecial">
+          <div className="container">
+            <div className="home-category-ads">
+            <div className="left-sidebar">
               <dl>
-                <dt class="category">Category</dt>
-                <dt class="element">Agriculture</dt>
-                <dt class="element">Attorneys</dt>
-                <dt class="element">Automotive</dt>
-                <dt class="element">Construction</dt>
-                <dt class="element">Entertainment</dt>
-                <dt class="element">Financial</dt>
-                <dt class="element">Manufacturing</dt>
+                <dt className="element">Category</dt>
+                <dt className="element">Agriculture</dt>
+                <dt className="element">Attorneys</dt>
+                <dt className="element">Automotive</dt>
+                <dt className="element">Construction</dt>
+                <dt className="element">Entertainment</dt>
+                <dt className="element">Financial</dt>
+                <dt className="element">Manufacturing</dt>
               </dl>
             </div>
+            <div className="home-ads">
+            </div>
+            </div>
             <div style={{backgroundColor: '#CD2323', padding: '20px 15px 10px 15px', marginTop: '20px', borderRadius: '5px'}}>
-              <a href="/business-package-selection-page" style={{float: 'right', fontSize: '15px', fontWeight: '500', color: '#fff'}}>All Products <i class="fa fa-angle-right"></i></a>
+              <a href="/business-package-selection-page" style={{float: 'right', fontSize: '15px', fontWeight: '500', color: '#fff'}}>All Products <i className="fa fa-angle-right"></i></a>
               <div style={{backgroundColor: '#fff', padding: '10px 0px 5px 0px', marginTop: '40px', width: '100%', height: '100%', borderRadius: '5px'}}>
                 <InfiniteCarousel
                   breakpoints={[
@@ -178,36 +207,35 @@ class HomePage extends React.Component {
                     {breakpoint: 600, settings: {slidesToShow: 2, slidesToScroll: 2,},},
                     {breakpoint: 768, settings: {slidesToShow: 3, slidesToScroll: 3,},},
                   ]}
-                  dots={true} showSides={true} sidesOpacity={.5} sideSize={.1} slidesToScroll={4} slidesToShow={4} scrollOnDevice={true}
-                >
+                  dots={true} showSides={true} sidesOpacity={.5} sideSize={.1} slidesToScroll={4} slidesToShow={4} scrollOnDevice={true}>
                   {sliderData.map((sliderItem, sliderKey) => {
                     return (
-                      <ProductCard title={sliderItem.title} image={sliderItem.image} price={sliderItem.price} date={sliderItem.date} />
-                    );}                      
-                  )}      
+                      <ProductCard key={sliderKey} title={sliderItem.title} image={sliderItem.image} price={sliderItem.price} date={sliderItem.date} />
+                    );}
+                  )}
                 </InfiniteCarousel>
               </div>
             </div>
             {CategoryData.map((categoryItem, categoryKey) => {
               return(
-                <CategoryPanel category={categoryItem.title}>
+                <CategoryPanel key={categoryKey} category={categoryItem.title}>
                   <CategorySlider>
-                    <Slider {...settings}>                      
+                    <Slider {...settings}>
                       {categoryItem.sliders.map((sliderItem, sliderKey) => {
                         return (
-                          <ProductSlider title={sliderItem.sliderTitle} image={sliderItem.image} fromColor={sliderItem.fromColor} toColor={sliderItem.toColor} />
-                        );}                      
-                      )}      
+                          <ProductSlider key={sliderKey} title={sliderItem.sliderTitle} image={sliderItem.image} fromColor={sliderItem.fromColor} toColor={sliderItem.toColor} />
+                        );}
+                      )}
                     </Slider>
                   </CategorySlider>
                   <CategoryCard>
                     {categoryItem.products.map((productItem, productKey) => {
                       return (
-                        <div class="col-12 col-md-3">   
+                        <div key={productKey} className="col-12 col-md-3">
                           <ProductCard title={productItem.productTitle} image={productItem.image} price={productItem.price} date={productItem.date} />
                         </div>
-                      );}                      
-                    )}      
+                      );}
+                    )}
                   </CategoryCard>
                 </CategoryPanel>
               );
@@ -216,14 +244,14 @@ class HomePage extends React.Component {
               <CategoryCard>
                 {homeItemData.map((productItem, productKey) => {
                   return (
-                    <div class="col-md-3">   
+                    <div key={productKey} className="col-md-3">
                       <ProductCard title={productItem.productTitle} image={productItem.image} price={productItem.price} date={productItem.date} />
                     </div>
                   )
-                  ;}                      
-                )}      
+                    ;}
+                )}
               </CategoryCard>
-            </CategoryPanel>            
+            </CategoryPanel>
           </div>
         </section>
       </div>

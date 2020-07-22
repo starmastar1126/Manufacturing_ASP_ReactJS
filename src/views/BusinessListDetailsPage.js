@@ -53,16 +53,16 @@ class BusinessListDetailsPage extends React.Component {
         bgImage = {bgImage}
         title = {'View Business Details'}
       />
-      <section class="viewspecial">
-	      <div class="container">        
-          <div class="search_list">
-        	  <div class="row">
-            	<div class="col-md-9">
-                <div class="business_details_area">
-                  <div class="business_dtls_image"><img src={businessImage} alt=""/></div>
-                  <div class="business_details_content clearfix">
+      <section className="viewspecial">
+	      <div className="container">
+          <div className="search_list">
+        	  <div className="row">
+            	<div className="col-md-9">
+                <div className="business_details_area">
+                  <div className="business_dtls_image"><img src={businessImage} alt=""/></div>
+                  <div className="business_details_content clearfix">
                     <h2>Lorem Ipsum is simply dummy text</h2>
-                    <ul class="clearfix">
+                    <ul className="clearfix">
                       <li><a>Address:
                         <span id="lblAddress">Johannesburg,City of Johannesburg Metropolitan Municipality,Gauteng - 2091</span></a></li>
                       <li><a>Status:
@@ -75,23 +75,23 @@ class BusinessListDetailsPage extends React.Component {
                   </div>
                   <br/>
                   <hr/>
-                  <div class="business_contact">
+                  <div className="business_contact">
                     <h3>Contact Details</h3>
                     <ul>
                       <li>
-                        <i class="fa fa-map-marker"></i>
+                        <i className="fa fa-map-marker"></i>
                         34 Kindon Road Robersham,Johannesburg,City of Johannesburg Metropolitan Municipality,Gauteng - 2091 
                       </li>
                       <li>
-                        <i class="fa fa-phone"></i>
+                        <i className="fa fa-phone"></i>
                         0123456789
                       </li>
                       <li>
-                        <i class="fa fa-envelope-o"></i>
+                        <i className="fa fa-envelope-o"></i>
                         <a href="#">example@gmail.com</a> 
                       </li>
                       <li>
-                        <i class="fa fa-globe"></i>
+                        <i className="fa fa-globe"></i>
                         <a href="#"> www.manufacturingezyfind.co.za </a> 
                       </li>                          
                     </ul>
@@ -101,67 +101,67 @@ class BusinessListDetailsPage extends React.Component {
                 </div>
               </div>
                 
-              <div class="col-md-3">
-                <div class="filter filter_category clearfix">
+              <div className="col-md-3">
+                <div className="filter filter_category clearfix">
                   <h2>Categories</h2>
-                  <ul class="clearfix">
+                  <ul className="clearfix">
                     <li>
-                      <div class="lft">
+                      <div className="lft">
                         <p>Categories 1</p>
                       </div>
-                      <div class="number">3</div>
+                      <div className="number">3</div>
                     </li>                        
                     <li>
-                      <div class="lft">
+                      <div className="lft">
                         <p>Categories 2 </p>
                       </div>
-                      <div class="number">3</div>
+                      <div className="number">3</div>
                     </li>
                     <li>
-                      <div class="lft">
+                      <div className="lft">
                         <p>Categories 3</p>
                       </div>
-                      <div class="number">3</div>
+                      <div className="number">3</div>
                     </li>
                     <li>
-                      <div class="lft">
+                      <div className="lft">
                         <p>Categories 4</p>
                       </div>
-                      <div class="number">3</div>
+                      <div className="number">3</div>
                     </li>
                     
                     <li>
-                      <div class="lft">
+                      <div className="lft">
                         <p>Categories 5</p>
                       </div>
-                      <div class="number">3</div>
+                      <div className="number">3</div>
                     </li>
                   </ul>
                 </div>
 
-                <div class="filter filter_category clearfix">
+                <div className="filter filter_category clearfix">
                   <h2> Rating</h2>
-                  <div class="field">                  
-                    <ul class="skill-bar">                        
+                  <div className="field">
+                    <ul className="skill-bar">
                       <li>
                         <p>Excellent</p>
-                        <div class="bar-wrap"><span data-width="0.00" style={{width: '50%'}}><strong style={{opacity: '1'}}>50%</strong> </span></div>
+                        <div className="bar-wrap"><span data-width="0.00" style={{width: '50%'}}><strong style={{opacity: '1'}}>50%</strong> </span></div>
                       </li>                  
                       <li>
                         <p>Very Good</p>
-                        <div class="bar-wrap"><span data-width="0.00" style={{width: '90%'}}><strong style={{opacity: '1'}}>90%</strong> </span></div>
+                        <div className="bar-wrap"><span data-width="0.00" style={{width: '90%'}}><strong style={{opacity: '1'}}>90%</strong> </span></div>
                       </li>                  
                       <li>
                         <p>Good</p>
-                        <div class="bar-wrap"><span data-width="0.00" style={{width: '30%'}}><strong style={{opacity: '1'}}>30%</strong> </span></div>
+                        <div className="bar-wrap"><span data-width="0.00" style={{width: '30%'}}><strong style={{opacity: '1'}}>30%</strong> </span></div>
                       </li>                  
                       <li>
                         <p>Average</p>
-                        <div class="bar-wrap"><span data-width="0.00" style={{width: '80%'}}><strong style={{opacity: '1'}}>80%</strong> </span></div>
+                        <div className="bar-wrap"><span data-width="0.00" style={{width: '80%'}}><strong style={{opacity: '1'}}>80%</strong> </span></div>
                       </li>                  
                       <li>
                         <p>Poor</p>
-                        <div class="bar-wrap"><span data-width="0.00" style={{width: '25%'}}><strong style={{opacity: '1'}}>25%</strong> </span></div>
+                        <div className="bar-wrap"><span data-width="0.00" style={{width: '25%'}}><strong style={{opacity: '1'}}>25%</strong> </span></div>
                       </li>                
                     </ul>
                   </div> 
@@ -173,17 +173,17 @@ class BusinessListDetailsPage extends React.Component {
       {/* </div> */}
       </section>
 
-      <section class="viewspecial magazin_list_page special_bhusiness">
-        <div class="container">
-          <div class="heading">Special By 3 M South Africa Pty Ltd No Special Found.</div>
+      <section className="viewspecial magazin_list_page special_bhusiness">
+        <div className="container">
+          <div className="heading">Special By 3 M South Africa Pty Ltd No Special Found.</div>
           <br/>
-          <div class="search_list viewspecial_magazin">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="row">
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="search_box clearfix">                                
-                      <div class="search_img">
+          <div className="search_list viewspecial_magazin">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="row">
+                  <div className="col-md-4 col-sm-6 text-center">
+                    <div className="search_box clearfix">
+                      <div className="search_img">
                         <a href={specialImage1}><img src={specialImage1} alt=""/></a>
                         {/* <a href={magagin21}><img src={magagin21} alt=""/></a> */}
                       </div>     
@@ -192,9 +192,9 @@ class BusinessListDetailsPage extends React.Component {
                     </div>
                   </div>
                     
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="search_box clearfix">                          
-                      <div class="search_img">
+                  <div className="col-md-4 col-sm-6 text-center">
+                    <div className="search_box clearfix">
+                      <div className="search_img">
                         <a href={specialImage2}><img src={specialImage2} alt=""/></a>
                         {/* <a href={ss2}><img src={ss2} alt=""/></a> */}
                       </div>                      
@@ -203,9 +203,9 @@ class BusinessListDetailsPage extends React.Component {
                     </div>
                   </div>
                     
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="search_box clearfix">                        
-                      <div class="search_img">
+                  <div className="col-md-4 col-sm-6 text-center">
+                    <div className="search_box clearfix">
+                      <div className="search_img">
                         <a href={specialImage3}><img src={specialImage3} alt=""/></a>
                         {/* <a href={ss}><img src={ss} alt=""/></a> */}
                       </div>                      
@@ -214,9 +214,9 @@ class BusinessListDetailsPage extends React.Component {
                     </div>
                   </div>
                   
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="search_box clearfix">
-                      <div class="search_img">
+                  <div className="col-md-4 col-sm-6 text-center">
+                    <div className="search_box clearfix">
+                      <div className="search_img">
                         <a href={specialImage4}><img src={specialImage4} alt=""/></a>
                         {/* <a href={ss3}><img src={ss3} alt=""/></a> */}
                       </div>                      
@@ -225,9 +225,9 @@ class BusinessListDetailsPage extends React.Component {
                     </div>
                   </div>
 
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="search_box clearfix">                        
-                      <div class="search_img">
+                  <div className="col-md-4 col-sm-6 text-center">
+                    <div className="search_box clearfix">
+                      <div className="search_img">
                         <a href={specialImage1}><img src={specialImage1} alt=""/></a>
                         {/* <a href={magagin21}><img src={magagin21} alt=""/></a> */}
                       </div>     
@@ -236,9 +236,9 @@ class BusinessListDetailsPage extends React.Component {
                     </div>
                   </div>
               
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="search_box clearfix">                          
-                      <div class="search_img">
+                  <div className="col-md-4 col-sm-6 text-center">
+                    <div className="search_box clearfix">
+                      <div className="search_img">
                         <a href={specialImage3}><img src={specialImage3} alt=""/></a>
                         {/* <a href={ss2}><img src={ss2} alt=""/></a> */}
                       </div>                  
@@ -258,12 +258,12 @@ class BusinessListDetailsPage extends React.Component {
       {/* </div> */}
     </section>
 
-    <section class="related_product">
-      <div class="container">
-        <div class="heading">E-Flyers / E-Catalogue By New Age Plastics</div>
-        <div class="related_product_slider">
-          <div class="product_col">
-            <div class="product_image">
+    <section className="related_product">
+      <div className="container">
+        <div className="heading">E-Flyers / E-Catalogue By New Age Plastics</div>
+        <div className="related_product_slider">
+          <div className="product_col">
+            <div className="product_image">
               <a href={categoryImage1}><img src={categoryImage1} alt="Image"/></a>
               {/* <a href={cat1}><img src={cat1} alt="Image"/></a> */}
             </div>
@@ -271,8 +271,8 @@ class BusinessListDetailsPage extends React.Component {
             <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem</p>
           </div>
             
-          <div class="product_col">
-            <div class="product_image">
+          <div className="product_col">
+            <div className="product_image">
               <a href={categoryImage2}><img src={categoryImage2} alt="Image"/></a>
               {/* <a href={cat2}><img src={cat2} alt="Image"/></a> */}
             </div>
@@ -280,8 +280,8 @@ class BusinessListDetailsPage extends React.Component {
             <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem</p>
           </div>
             
-          <div class="product_col">
-            <div class="product_image">
+          <div className="product_col">
+            <div className="product_image">
               <a href={categoryImage3}><img src={categoryImage3} alt="Image"/></a>
               {/* <a href={cat3}><img src={cat3} alt="Image"/></a> */}
             </div>
@@ -289,8 +289,8 @@ class BusinessListDetailsPage extends React.Component {
             <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem</p>
           </div>
             
-          <div class="product_col">
-            <div class="product_image">
+          <div className="product_col">
+            <div className="product_image">
               <a href={categoryImage4}><img src={categoryImage4} alt="Image"/></a>
               {/* <a href={cat4}><img src={cat4} alt="Image"/></a> */}
             </div>
@@ -298,8 +298,8 @@ class BusinessListDetailsPage extends React.Component {
             <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem</p>
           </div>
       
-          <div class="product_col">
-            <div class="product_image">
+          <div className="product_col">
+            <div className="product_image">
               <a href={categoryImage1}><img src={categoryImage1} alt="Image"/></a>
               {/* <a href={cat1}><img src={cat1} alt="Image"/></a> */}
             </div>
@@ -307,8 +307,8 @@ class BusinessListDetailsPage extends React.Component {
             <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem</p>
           </div>
       
-          <div class="product_col">
-            <div class="product_image">
+          <div className="product_col">
+            <div className="product_image">
               <a href={categoryImage2}><img src={categoryImage2} alt="Image"/></a>
               {/* <a href={cat2}><img src={cat2} alt="Image"/></a> */}
             </div>
@@ -319,80 +319,80 @@ class BusinessListDetailsPage extends React.Component {
       </div>
     </section>
 
-    <section class="review_section">
-      <div class="container">
-        <div class="business_contact review_details">
+    <section className="review_section">
+      <div className="container">
+        <div className="business_contact review_details">
           <h3>Reviews on New Age Plastics</h3>
           <br/>
-          <article class="type-post clearfix">
-            <div class="entry-content content-thumbnail">
-              <header class="entry-header">
-                <h2 class="entry-title">
+          <article className="type-post clearfix">
+            <div className="entry-content content-thumbnail">
+              <header className="entry-header">
+                <h2 className="entry-title">
                   <a href="javascript:void(0);" rel="bookmark">Author Name</a>
                 </h2>
-                <div class="entry-meta">
-                  <span class="posted-on">Posted By <a href="javascript:void(0);" rel="bookmark"> Admin 
-                    <time class="entry-date published" datetime="2016-09-06T04:52:25+00:00"> June 30,2018</time>
+                <div className="entry-meta">
+                  <span className="posted-on">Posted By <a href="javascript:void(0);" rel="bookmark"> Admin
+                    <time className="entry-date published" datetime="2016-09-06T04:52:25+00:00"> June 30,2018</time>
                   </a></span>
                 </div>
-                <div class="star">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
+                <div className="star">
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                  <i className="fa fa-star" aria-hidden="true"></i>
                 </div>
               </header>
-              <div class="entry-desc">
+              <div className="entry-desc">
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
               </div>
             </div>
           </article>
 
-          <article class="type-post clearfix">
-            <div class="entry-content content-thumbnail">
-              <header class="entry-header">
-                <h2 class="entry-title">
+          <article className="type-post clearfix">
+            <div className="entry-content content-thumbnail">
+              <header className="entry-header">
+                <h2 className="entry-title">
                   <a href="javascript:void(0);" rel="bookmark">Author Name</a>
                 </h2>
-                <div class="entry-meta">
-                  <span class="posted-on">Posted By <a href="javascript:void(0);" rel="bookmark"> Admin 
-                    <time class="entry-date published" datetime="2016-09-06T04:52:25+00:00"> June 30,2018</time>
+                <div className="entry-meta">
+                  <span className="posted-on">Posted By <a href="javascript:void(0);" rel="bookmark"> Admin
+                    <time className="entry-date published" datetime="2016-09-06T04:52:25+00:00"> June 30,2018</time>
                   </a></span>
                 </div>
-                <div class="star">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                <div className="star">
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                  <i className="fa fa-star-half-o" aria-hidden="true"></i>
+                  <i className="fa fa-star-o" aria-hidden="true"></i>
                 </div>
               </header>
-              <div class="entry-desc">
+              <div className="entry-desc">
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa . </p>
               </div>
             </div>
           </article>
-          <article class="type-post clearfix">
-            <div class="entry-content content-thumbnail">
-              <header class="entry-header">
-                <h2 class="entry-title">
+          <article className="type-post clearfix">
+            <div className="entry-content content-thumbnail">
+              <header className="entry-header">
+                <h2 className="entry-title">
                   <a href="javascript:void(0);" rel="bookmark">Author Name</a>
                 </h2>
-                <div class="entry-meta">
-                  <span class="posted-on">Posted By <a href="javascript:void(0);" rel="bookmark"> Admin 
-                    <time class="entry-date published" datetime="2016-09-06T04:52:25+00:00"> June 30,2018</time>
+                <div className="entry-meta">
+                  <span className="posted-on">Posted By <a href="javascript:void(0);" rel="bookmark"> Admin
+                    <time className="entry-date published" datetime="2016-09-06T04:52:25+00:00"> June 30,2018</time>
                   </a></span>
                 </div>
-                <div class="star">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                <div className="star">
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                  <i className="fa fa-star-half-o" aria-hidden="true"></i>
+                  <i className="fa fa-star-o" aria-hidden="true"></i>
                 </div>
               </header>
-              <div class="entry-desc">
+              <div className="entry-desc">
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
               </div>
             </div>

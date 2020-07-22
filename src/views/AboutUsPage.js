@@ -61,10 +61,10 @@ class AboutUsPage extends React.Component {
           bgImage = {bgImage}
           title = {'About Us'}
         />
-            <section class="how_it_works">
-              <div class="container">
-                <div class="heading">How it works</div>
-                <div class="row"> 
+            <section className="how_it_works">
+              <div className="container">
+                <div className="heading">How it works</div>
+                <div className="row">
                   {howitworksData.map((howitworksItem, howitworksKey) => {
                     return (
                       <HowItWorks
@@ -76,25 +76,25 @@ class AboutUsPage extends React.Component {
                     );}                      
                   )}     
                 </div>
-                <p class="indus">We have a sophisticated algorithm which will match you to other businesses by products, services, quantity, timelines & location to generate you LEADS & A SALE www.ManufacturingEzyFind.co.za <span>Industrial 4.0</span></p>
+                <p className="indus">We have a sophisticated algorithm which will match you to other businesses by products, services, quantity, timelines & location to generate you LEADS & A SALE www.ManufacturingEzyFind.co.za <span>Industrial 4.0</span></p>
               </div>
             </section>
 
-            <section class="about_us">
-              <div class="container">
-                <div class="about_part">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="about_image"><img src={productImage} alt=""/></div>
+            <section className="about_us">
+              <div className="container">
+                <div className="about_part">
+                  <div className="row">
+                    <div className="col-md-4">
+                      <div className="about_image"><img src={productImage} alt=""/></div>
                     </div>
-                    <div class="col-md-8">
+                    <div className="col-md-8">
                       <h2>simply dummy text simply dummy text</h2>
                       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
                       <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. </p>
                     </div>
                   </div>
                 </div>
-                <div class="about_content">
+                <div className="about_content">
                   <h2>The standard Lorem Ipsum passage </h2>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, </p>
                   <p>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, </p>

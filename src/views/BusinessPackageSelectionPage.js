@@ -345,30 +345,30 @@ class BusinessPackageSelectionPage extends React.Component {
           bgImage = {bgImage}
           title = {'Business Package Selection'}
         />
-        <section class="breadcrumbs">
-          <div class="container">
+        <section className="breadcrumbs">
+          <div className="container">
             <ul>
               <li><a href="/home-page">Home</a></li>
               <li><a href="">Business Registration</a></li>
             </ul>
           </div>
         </section>
-        <section class="planing_section">
-          <div class="container">
-            <div class="text-center"><h1>Select Subscription Plan</h1></div>
-            <div class="row" style={{marginTop: "50px"}}>
-              <div class="col-md-12 text-center">
-                <div class="tabs-wrapper"><div class="tabs enabled"><ul class="tab-list" role="tablist"></ul>                  
-                  <ul class="tab-list" role="tablist">
-                    <li class={this.state.monthly === 1 ? "tab active-tab" : "tab"} id="tablist1-tab1" aria-controls="tablist1-panel1" role="tab" tabindex="0"><b onClick={() => this.selectPackageDuration(1)} id="A1" class={this.state.monthly === 1 ? "clicked" : ""}>1 Month </b></li>
-                    <li class={this.state.monthly === 3 ? "tab active-tab" : "tab"} id="tablist1-tab2" aria-controls="tablist1-panel2" role="tab" tabindex="0"><b onClick={() => this.selectPackageDuration(3)} id="A3" class={this.state.monthly === 3 ? "clicked" : ""}>3 Months (5% OFF)</b></li>
-                    <li class={this.state.monthly === 6 ? "tab active-tab" : "tab"} id="tablist1-tab3" aria-controls="tablist1-panel3" role="tab" tabindex="0"><b onClick={() => this.selectPackageDuration(6)} id="A6" class={this.state.monthly === 6 ? "clicked" : ""}>6 Months (10% OFF)</b></li>
-                    <li class={this.state.monthly === 9 ? "tab active-tab" : "tab"} id="tablist1-tab4" aria-controls="tablist1-panel4" role="tab" tabindex="0"><b onClick={() => this.selectPackageDuration(9)} id="A9" class={this.state.monthly === 9 ? "clicked" : ""}>9 Months (15% OFF) </b></li>
+        <section className="planing_section">
+          <div className="container">
+            <div className="text-center"><h1>Select Subscription Plan</h1></div>
+            <div className="row" style={{marginTop: "50px"}}>
+              <div className="col-md-12 text-center">
+                <div className="tabs-wrapper"><div className="tabs enabled"><ul className="tab-list" role="tablist"></ul>
+                  <ul className="tab-list" role="tablist">
+                    <li className={this.state.monthly === 1 ? "tab active-tab" : "tab"} id="tablist1-tab1" aria-controls="tablist1-panel1" role="tab" tabindex="0"><b onClick={() => this.selectPackageDuration(1)} id="A1" className={this.state.monthly === 1 ? "clicked" : ""}>1 Month </b></li>
+                    <li className={this.state.monthly === 3 ? "tab active-tab" : "tab"} id="tablist1-tab2" aria-controls="tablist1-panel2" role="tab" tabindex="0"><b onClick={() => this.selectPackageDuration(3)} id="A3" className={this.state.monthly === 3 ? "clicked" : ""}>3 Months (5% OFF)</b></li>
+                    <li className={this.state.monthly === 6 ? "tab active-tab" : "tab"} id="tablist1-tab3" aria-controls="tablist1-panel3" role="tab" tabindex="0"><b onClick={() => this.selectPackageDuration(6)} id="A6" className={this.state.monthly === 6 ? "clicked" : ""}>6 Months (10% OFF)</b></li>
+                    <li className={this.state.monthly === 9 ? "tab active-tab" : "tab"} id="tablist1-tab4" aria-controls="tablist1-panel4" role="tab" tabindex="0"><b onClick={() => this.selectPackageDuration(9)} id="A9" className={this.state.monthly === 9 ? "clicked" : ""}>9 Months (15% OFF) </b></li>
                   </ul>
                 </div></div>
               </div>
-              <div id="dvPackage" class="planing_area clearfix col-md-12 text-center" style={{marginTop: '50px'}}>
-                <div class="row">
+              <div id="dvPackage" className="planing_area clearfix col-md-12 text-center" style={{marginTop: '50px'}}>
+                <div className="row">
                 {listData.map((item, key) => {
                   if(item.monthly === this.state.monthly){
                     return(

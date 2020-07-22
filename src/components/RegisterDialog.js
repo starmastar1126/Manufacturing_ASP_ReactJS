@@ -13,18 +13,18 @@ class RegisterDialog extends React.Component {
           effect="fadeInDown"
           onClickAway={this.props.registerHandler}
       >
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onClick={this.props.registerHandler}>
+          <div className="modal-header">
+            <button type="button" className="close" data-dismiss="modal" aria-label="Close" onClick={this.props.registerHandler}>
               <span aria-hidden="true">×</span>
             </button>
-            <h4 class="modal-title" id="myModalLabel" style={{textAlign: 'center'}}>Register as</h4>
+            <h4 className="modal-title" id="myModalLabel" style={{textAlign: 'center'}}>Register as</h4>
           </div>
-          <div class="modal-body">
-            <div class="register_btn" style={{marginTop: '10px'}}>
+          <div className="modal-body">
+            <div className="register_btn" style={{marginTop: '10px'}}>
               <a href="/business-package-selection-page">Register as Business User</a>
             </div>
             <br/>
-            <div class="register_btn" style={{marginTop: '0px'}}>
+            <div className="register_btn" style={{marginTop: '0px'}}>
               <a href="/individual-registration-page">Register as Individual</a>
             </div>
           </div>
