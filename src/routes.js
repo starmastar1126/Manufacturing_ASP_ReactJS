@@ -1,63 +1,475 @@
-// import React from 'react';
+import Buttons from "views/Components/Buttons.jsx";
+import Calendar from "views/Calendar/Calendar.jsx";
+import Charts from "views/Charts/Charts.jsx";
+import Dashboard from "views/Dashboard/Dashboard.jsx";
+import ErrorPage from "views/Pages/ErrorPage.jsx";
+import ExtendedForms from "views/Forms/ExtendedForms.jsx";
+import ExtendedTables from "views/Tables/ExtendedTables.jsx";
+import FullScreenMap from "views/Maps/FullScreenMap.jsx";
+import GoogleMaps from "views/Maps/GoogleMaps.jsx";
+import GridSystem from "views/Components/GridSystem.jsx";
+import Icons from "views/Components/Icons.jsx";
+import LockScreenPage from "views/Pages/LockScreenPage.jsx";
+import LoginPage from "views/Pages/LoginPage.jsx";
+import Notifications from "views/Components/Notifications.jsx";
+import Panels from "views/Components/Panels.jsx";
+import PricingPage from "views/Pages/PricingPage.jsx";
+import RTLSupport from "views/Pages/RTLSupport.jsx";
+import ReactTables from "views/Tables/ReactTables.jsx";
+import RegisterPage from "views/Pages/RegisterPage.jsx";
+import RegularForms from "views/Forms/RegularForms.jsx";
+import RegularTables from "views/Tables/RegularTables.jsx";
+import SweetAlert from "views/Components/SweetAlert.jsx";
+import TimelinePage from "views/Pages/Timeline.jsx";
+import Typography from "views/Components/Typography.jsx";
+import UserProfile from "views/Pages/UserProfile.jsx";
+import ValidationForms from "views/Forms/ValidationForms.jsx";
+import VectorMap from "views/Maps/VectorMap.jsx";
+import Widgets from "views/Widgets/Widgets.jsx";
+import Wizard from "views/Forms/Wizard.jsx";
 
-import HomePage from './views/HomePage';
-import ProductListPage from './views/ProductListPage';
-import BusinessListPage from './views/BusinessListPage';
-import BusinessListDetailsPage from './views/BusinessListDetailsPage';
-import ViewMagazinesPage from './views/ViewMagazinesPage';
-import ViewMagazinesDetailsPage from './views/ViewMagazinesDetailsPage';
-import SpecialListPage from './views/SpecialListPage';
-import SpecialListDetailsPage from './views/SpecialListDetailsPage';
-import AboutUsPage from './views/AboutUsPage';
-import CompetitionPage from './views/CompetitionPage';
-import ContactUsPage from './views/ContactUsPage';
-import BusinessPackageSelectionPage from './views/BusinessPackageSelectionPage';
+// @material-ui/icons
+import Apps from "@material-ui/icons/Apps";
+import DashboardIcon from "@material-ui/icons/Dashboard";
+import DateRange from "@material-ui/icons/DateRange";
+import GridOn from "@material-ui/icons/GridOn";
+import Image from "@material-ui/icons/Image";
+import Place from "@material-ui/icons/Place";
+import Timeline from "@material-ui/icons/Timeline";
+import WidgetsIcon from "@material-ui/icons/Widgets";
 
-import BusinessRegisterPaymentPage from './views/BusinessRegisterPaymentPage';
-import BusinessRegistrationPage from './views/BusinessRegistrationPage';
-import CartPage from './views/CartPage';
-import LoginPage from './views/LoginPage';
-import IndividualRegistrationPage from './views/IndividualRegistrationPage';
-// import ProductsListPage from './views/ProductsListPage';
+// Athena customize
+import AccessAlarms from "@material-ui/icons/AccessAlarms";
+import homePage from "views/Athena/homePage.jsx";
+import manufacturingCompaniesPage from "views/Athena/manufacturingCompaniesPage.jsx";
+import digitalCataloguesPage from "views/Athena/digitalCataloguesPage.jsx";
+import specialsPage from "views/Athena/specialsPage.jsx";
+import listYourBusinessPage from "views/Athena/listYourBusinessPage.jsx";
+import contactPage from "views/Athena/contactPage.jsx";
+import aboutPage from "views/Athena/aboutPage.jsx";
+import competitionPage from "views/Athena/competitionPage.jsx";
+import registrationPage from "views/Athena/registrationPage.jsx";
 
-import PaymentPage from './views/PaymentPage';
-import PayPalPaymentPage from './views/paypal/PayPalPaymentPage';
-import PayPalCancelPage from './views/paypal/PayPalCancelPage';
-import PayPalReturnPage from './views/paypal/PayPalReturnPage';
-import PayFastPaymentPage from './views/payfast/PayFastPaymentPage';
-import PayFastCancelPage from './views/payfast/PayFastCancelPage';
-import PayFastNotifyPage from './views/payfast/PayFastNotifyPage';
-import PayFastReturnPage from './views/payfast/PayFastReturnPage';
-
-const routes = [
-    { path: '/', exact: true, name: 'Home Page', component: HomePage },
-    { path: '/home-page', name: 'Home Page', component: HomePage },
-    { path: '/product-list-page', name: 'Product List Page', component: ProductListPage },
-    { path: '/business-list-page', name: 'Business List Page', component: BusinessListPage },
-    { path: '/business-list-details-page', name: 'Business List Details Page', component: BusinessListDetailsPage },
-    { path: '/view-magazines-page', name: 'View Magazines Page', component: ViewMagazinesPage },
-    { path: '/view-magazines-details-page', name: 'View Magazines Details Page', component: ViewMagazinesDetailsPage },
-    { path: '/special-list-page', name: 'Special List Page', component: SpecialListPage },
-    { path: '/special-list-details-page', name: 'Special List Details Page', component: SpecialListDetailsPage },
-    { path: '/about-us-page', name: 'About Us Page', component: AboutUsPage },
-    { path: '/competition-page', name: 'Competition Page', component: CompetitionPage },
-    { path: '/contact-us-page', name: 'Contact Us Page', component: ContactUsPage },
-    { path: '/business-package-selection-page', name: 'Business Package Selection Page', component: BusinessPackageSelectionPage },
-    { path: '/business-register-payment-page', name: 'Business Register Payment Page', component: BusinessRegisterPaymentPage },
-    { path: '/business-registration-page', name: 'Business Registration Page', component: BusinessRegistrationPage },
-    { path: '/cart-page', name: 'Cart Page', component: CartPage },
-    { path: '/login-page', name: 'Login Page', component: LoginPage },
-    { path: '/individual-registration-page', name: 'Individual Registration Page', component: IndividualRegistrationPage },
-    // { path: '/products-list-page', name: 'Products List Page', component: ProductsListPage },
-
-    { path: '/payment-page', name: 'Payment Page', component: PaymentPage },
-    { path: '/paypal-payment-page', name: 'PayPal Payment Page', component: PayPalPaymentPage },
-    { path: '/paypal-cancel-page', name: 'PayPal Cancel Page', component: PayPalCancelPage },
-    { path: '/paypal-return-page', name: 'PayPal Return Page', component: PayPalReturnPage },
-    { path: '/payfast-payment-page', name: 'PayFast Payment Page', component: PayFastPaymentPage },
-    { path: '/payfast-cancel-page', name: 'PayFast Cancel Page', component: PayFastCancelPage },
-    { path: '/payfast-notify-page', name: 'PayFast Notify Page', component: PayFastNotifyPage },
-    { path: '/payfast-return-page', name: 'PayFast Return Page', component: PayFastReturnPage },
+var dashRoutes = [
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    rtlName: "لوحة القيادة",
+    icon: DashboardIcon,
+    component: Dashboard,
+    layout: "/admin"
+  },
+  {
+    collapse: true,
+    name: "Athena",
+    rtlName: "صفحات",
+    icon: AccessAlarms,
+    state: "athenaCollapse",
+    views: [
+      {
+        path: "/home-page",
+        name: "Home Page",
+        rtlName: "عالتسعير",
+        // icon: DateRange,
+        // mini: "UP",
+        rtlMini: "ع",
+        component: homePage,
+        layout: "/athena"
+      },
+      {
+        path: "/manufacturing-companies-page",
+        name: "Manufacturing Companies Page",
+        rtlName: "عالتسعير",
+        // icon: DateRange,
+        // mini: "UP",
+        rtlMini: "ع",
+        component: manufacturingCompaniesPage,
+        layout: "/athena"
+      },
+      {
+        path: "/digital-catalogues-page",
+        name: "Digital Catalogues Page",
+        rtlName: "عالتسعير",
+        // icon: DateRange,
+        // mini: "UP",
+        rtlMini: "ع",
+        component: digitalCataloguesPage,
+        layout: "/athena"
+      },
+      {
+        path: "/specials-page",
+        name: "Specials Page",
+        rtlName: "عالتسعير",
+        // icon: DateRange,
+        // mini: "UP",
+        rtlMini: "ع",
+        component: specialsPage,
+        layout: "/athena"
+      },
+      {
+        path: "/list-your-business-page",
+        name: "List Your Business Page",
+        rtlName: "عالتسعير",
+        // icon: DateRange,
+        // mini: "UP",
+        rtlMini: "ع",
+        component: listYourBusinessPage,
+        layout: "/athena"
+      },
+      {
+        path: "/contact-page",
+        name: "Contact Page",
+        rtlName: "عالتسعير",
+        // icon: DateRange,
+        // mini: "UP",
+        rtlMini: "ع",
+        component: contactPage,
+        layout: "/athena"
+      },
+      {
+        path: "/about-page",
+        name: "About Page",
+        rtlName: "عالتسعير",
+        // icon: DateRange,
+        // mini: "UP",
+        rtlMini: "ع",
+        component: aboutPage,
+        layout: "/athena"
+      },
+      {
+        path: "/competition-page",
+        name: "Competition Page",
+        rtlName: "عالتسعير",
+        // icon: DateRange,
+        // mini: "UP",
+        rtlMini: "ع",
+        component: competitionPage,
+        layout: "/athena"
+      },
+      {
+        path: "/registration-page",
+        name: "Registration Page",
+        rtlName: "عالتسعير",
+        // icon: DateRange,
+        // mini: "UP",
+        rtlMini: "ع",
+        component: registrationPage,
+        layout: "/athena"
+      },
+    ]
+  },
+  {
+    collapse: true,
+    name: "Pages",
+    rtlName: "صفحات",
+    icon: Image,
+    state: "pageCollapse",
+    views: [
+      {
+        path: "/pricing-page",
+        name: "Pricing Page",
+        rtlName: "عالتسعير",
+        mini: "PP",
+        rtlMini: "ع",
+        component: PricingPage,
+        layout: "/auth"
+      },
+      {
+        path: "/rtl-support-page",
+        name: "RTL Support",
+        rtlName: "صودعم رتل",
+        mini: "RS",
+        rtlMini: "صو",
+        component: RTLSupport,
+        layout: "/rtl"
+      },
+      {
+        path: "/timeline-page",
+        name: "Timeline Page",
+        rtlName: "تيالجدول الزمني",
+        mini: "T",
+        rtlMini: "تي",
+        component: TimelinePage,
+        layout: "/admin"
+      },
+      {
+        path: "/login-page",
+        name: "Login Page",
+        rtlName: "هعذاتسجيل الدخول",
+        mini: "L",
+        rtlMini: "هعذا",
+        component: LoginPage,
+        layout: "/auth"
+      },
+      {
+        path: "/register-page",
+        name: "Register Page",
+        rtlName: "تسجيل",
+        mini: "R",
+        rtlMini: "صع",
+        component: RegisterPage,
+        layout: "/auth"
+      },
+      {
+        path: "/lock-screen-page",
+        name: "Lock Screen Page",
+        rtlName: "اقفل الشاشة",
+        mini: "LS",
+        rtlMini: "هذاع",
+        component: LockScreenPage,
+        layout: "/auth"
+      },
+      {
+        path: "/user-page",
+        name: "User Profile",
+        rtlName: "ملف تعريفي للمستخدم",
+        mini: "UP",
+        rtlMini: "شع",
+        component: UserProfile,
+        layout: "/admin"
+      },
+      {
+        path: "/error-page",
+        name: "Error Page",
+        rtlName: "صفحة الخطأ",
+        mini: "E",
+        rtlMini: "البريد",
+        component: ErrorPage,
+        layout: "/auth"
+      }
+    ]
+  },
+  {
+    collapse: true,
+    name: "Components",
+    rtlName: "المكونات",
+    icon: Apps,
+    state: "componentsCollapse",
+    views: [
+      {
+        collapse: true,
+        name: "Multi Level Collapse",
+        rtlName: "انهيار متعدد المستويات",
+        mini: "MC",
+        rtlMini: "ر",
+        state: "multiCollapse",
+        views: [
+          {
+            path: "/buttons",
+            name: "Buttons",
+            rtlName: "وصفت",
+            mini: "B",
+            rtlMini: "ب",
+            component: Buttons,
+            layout: "/admin"
+          }
+        ]
+      },
+      {
+        path: "/buttons",
+        name: "Buttons",
+        rtlName: "وصفت",
+        mini: "B",
+        rtlMini: "ب",
+        component: Buttons,
+        layout: "/admin"
+      },
+      {
+        path: "/grid-system",
+        name: "Grid System",
+        rtlName: "نظام الشبكة",
+        mini: "GS",
+        rtlMini: "زو",
+        component: GridSystem,
+        layout: "/admin"
+      },
+      {
+        path: "/panels",
+        name: "Panels",
+        rtlName: "لوحات",
+        mini: "P",
+        rtlMini: "ع",
+        component: Panels,
+        layout: "/admin"
+      },
+      {
+        path: "/sweet-alert",
+        name: "Sweet Alert",
+        rtlName: "الحلو تنبيه",
+        mini: "SA",
+        rtlMini: "ومن",
+        component: SweetAlert,
+        layout: "/admin"
+      },
+      {
+        path: "/notifications",
+        name: "Notifications",
+        rtlName: "إخطارات",
+        mini: "N",
+        rtlMini: "ن",
+        component: Notifications,
+        layout: "/admin"
+      },
+      {
+        path: "/icons",
+        name: "Icons",
+        rtlName: "الرموز",
+        mini: "I",
+        rtlMini: "و",
+        component: Icons,
+        layout: "/admin"
+      },
+      {
+        path: "/typography",
+        name: "Typography",
+        rtlName: "طباعة",
+        mini: "T",
+        rtlMini: "ر",
+        component: Typography,
+        layout: "/admin"
+      }
+    ]
+  },
+  {
+    collapse: true,
+    name: "Forms",
+    rtlName: "إستمارات",
+    icon: "content_paste",
+    state: "formsCollapse",
+    views: [
+      {
+        path: "/regular-forms",
+        name: "Regular Forms",
+        rtlName: "أشكال عادية",
+        mini: "RF",
+        rtlMini: "صو",
+        component: RegularForms,
+        layout: "/admin"
+      },
+      {
+        path: "/extended-forms",
+        name: "Extended Forms",
+        rtlName: "نماذج موسعة",
+        mini: "EF",
+        rtlMini: "هوو",
+        component: ExtendedForms,
+        layout: "/admin"
+      },
+      {
+        path: "/validation-forms",
+        name: "Validation Forms",
+        rtlName: "نماذج التحقق من الصحة",
+        mini: "VF",
+        rtlMini: "تو",
+        component: ValidationForms,
+        layout: "/admin"
+      },
+      {
+        path: "/wizard",
+        name: "Wizard",
+        rtlName: "ساحر",
+        mini: "W",
+        rtlMini: "ث",
+        component: Wizard,
+        layout: "/admin"
+      }
+    ]
+  },
+  {
+    collapse: true,
+    name: "Tables",
+    rtlName: "الجداول",
+    icon: GridOn,
+    state: "tablesCollapse",
+    views: [
+      {
+        path: "/regular-tables",
+        name: "Regular Tables",
+        rtlName: "طاولات عادية",
+        mini: "RT",
+        rtlMini: "صر",
+        component: RegularTables,
+        layout: "/admin"
+      },
+      {
+        path: "/extended-tables",
+        name: "Extended Tables",
+        rtlName: "جداول ممتدة",
+        mini: "ET",
+        rtlMini: "هور",
+        component: ExtendedTables,
+        layout: "/admin"
+      },
+      {
+        path: "/react-tables",
+        name: "React Tables",
+        rtlName: "رد فعل الطاولة",
+        mini: "RT",
+        rtlMini: "در",
+        component: ReactTables,
+        layout: "/admin"
+      }
+    ]
+  },
+  {
+    collapse: true,
+    name: "Maps",
+    rtlName: "خرائط",
+    icon: Place,
+    state: "mapsCollapse",
+    views: [
+      {
+        path: "/google-maps",
+        name: "Google Maps",
+        rtlName: "خرائط جوجل",
+        mini: "GM",
+        rtlMini: "زم",
+        component: GoogleMaps,
+        layout: "/admin"
+      },
+      {
+        path: "/full-screen-maps",
+        name: "Full Screen Map",
+        rtlName: "خريطة كاملة الشاشة",
+        mini: "FSM",
+        rtlMini: "ووم",
+        component: FullScreenMap,
+        layout: "/admin"
+      },
+      {
+        path: "/vector-maps",
+        name: "Vector Map",
+        rtlName: "خريطة المتجه",
+        mini: "VM",
+        rtlMini: "تم",
+        component: VectorMap,
+        layout: "/admin"
+      }
+    ]
+  },
+  {
+    path: "/widgets",
+    name: "Widgets",
+    rtlName: "الحاجيات",
+    icon: WidgetsIcon,
+    component: Widgets,
+    layout: "/admin"
+  },
+  {
+    path: "/charts",
+    name: "Charts",
+    rtlName: "الرسوم البيانية",
+    icon: Timeline,
+    component: Charts,
+    layout: "/admin"
+  },
+  {
+    path: "/calendar",
+    name: "Calendar",
+    rtlName: "التقويم",
+    icon: DateRange,
+    component: Calendar,
+    layout: "/admin"
+  }
 ];
-
-export default routes;
+export default dashRoutes;
